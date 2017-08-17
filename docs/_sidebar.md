@@ -1,5 +1,23 @@
 - Components
   - [Buttons](/buttons)
+  - [Bottom navigation]()
+  - [Bottom sheets]()
+  - [Cards]()
+  - [Chips]()
+  - [Dialogs]()
+  - [Menus]()
+  - [Pickers]()
+  - [Progress]()
+  - [Rating Bar]()
+  - [Selection controls]()
+  - [Sliders]()
+  - [Snackbars & Toasts]()
+  - [Steppers]()
+  - [Tabs]()
+  - [Text fields]()
+  - [Toolbars]()
 
 - Patterns
   - [Data formats](data.md)
+
+- [F.A.Q.](faq.md)
