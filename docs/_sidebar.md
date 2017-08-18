@@ -11,7 +11,7 @@
   - [Rating Bar]()
   - [Selection controls]()
   - [Sliders]()
-  - [Snackbars & Toasts]()
+  - [Snackbars & Toasts](/snackbars-and-toasts)
   - [Steppers]()
   - [Tabs]()
   - [Text fields]()
