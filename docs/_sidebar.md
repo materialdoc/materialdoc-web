@@ -7,7 +7,7 @@
   - [Dialogs]()
   - [Menus]()
   - [Pickers]()
-  - [Progress]()
+  - [Progress](/progress)
   - [Rating Bar]()
   - [Selection controls]()
   - [Sliders]()
