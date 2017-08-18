@@ -4,7 +4,7 @@
 
 ![](_images/circular-progress-1.gif)
 
-!> From google material design [documentation](http://www.google.com/design/spec/components/progress-activity.html#).
+?> From google material design [documentation](http://www.google.com/design/spec/components/progress-activity.html#).
 Minimize visual changes that occur while your app loads content by representing each operation with a single activity indicator. For example, a refresh operation should display either a refresh bar or an activity circle, but not both.
 
 ### How to add?
@@ -66,7 +66,7 @@ II. Apply this style to your `ProgressBar` via `android:theme` attribute.
 
 ![](_images/linear-progress-1.gif)
 
-!> From google material design [documentation](http://www.google.com/design/spec/components/progress-activity.html#).
+?> From google material design [documentation](http://www.google.com/design/spec/components/progress-activity.html#).
 A linear progress indicator should always fill from 0% to 100% and never decrease in value. It should be represented by bars on the edge of a header or sheet that appear and disappear.
 
 ### How to add?
