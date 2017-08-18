@@ -2,31 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <meta name="description" content="Description">
+    <title>Material Design</title>
+    <meta name="description" content="The development documentation">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+    <link rel="stylesheet" href="themes/vue.css">
 </head>
 <body>
 <div id="app"></div>
 </body>
 <script>
   window.$docsify = {
-    name: 'Materialdoc',
+    name: 'materialdoc',
     maxLevel: 4,
     subMaxLevel: 2,
     loadSidebar: true,
-    repo: '',
+    loadNavbar: true,
+    repo: 'https://github.com/materialdoc/materialdoc-web',
     alias: {
     '/faq/': '/faq',
     '/buttons/': '/buttons'
-    }
+  },
+
+    plugins: [
+      function (hook, vm) {
+        hook.beforeEach(function (html) {
+          var url = 'https://github.com/materialdoc/materialdoc-web/blob/master/docs/' + vm.route.file
+          var editHtml = '<a class="edit-this-page" target="_blank" href="' + url + '">Edit this page on GitHub<\/a>\n'
+          var footer = [
+            '',
+          ]
+          return html
+            + '\n----\n'
+            + editHtml
+            + footer.join('')
+        })
+      }
+    ]
 }
 
 </script>
 
 <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/docsify@latest/lib/plugins/search.min.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
 <script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
 </html>

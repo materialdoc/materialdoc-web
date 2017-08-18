@@ -18,6 +18,20 @@
   - [Toolbars]()
 
 - Patterns
-  - [Data formats](data.md)
-
-- [F.A.Q.](faq.md)
+  - [Data formats]()
+  - [Empty states]()
+  - [Errors]()
+  - [Gestures]()
+  - [Fingerprint]()
+  - [Launch screens]()
+  - [Loading images]()
+  - [Navigation]()
+  - [Navigation drawer]()
+  - [Navigational transitions]()
+  - [Notifications]()
+  - [Permissions]()
+  - [Scrolling techniques]()
+  - [Search]()
+  - [Selection]()
+  - [Settings]()
+  - [Swipe to refresh]()
