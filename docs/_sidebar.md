@@ -1,6 +1,6 @@
 - Components
   - [Buttons](/buttons)
-  - [Bottom navigation]()
+  - [Bottom navigation](/bottom-navigation)
   - [Bottom sheets]()
   - [Cards]()
   - [Chips]()
