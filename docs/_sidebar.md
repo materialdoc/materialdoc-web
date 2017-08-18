@@ -8,7 +8,7 @@
   - [Menus]()
   - [Pickers]()
   - [Progress]()
-  - [Rating Bar]()
+  - [Rating Bar](/rating-bar)
   - [Selection controls]()
   - [Sliders]()
   - [Snackbars & Toasts]()
