@@ -2,14 +2,27 @@
   "hosting": {
     "public": "/",
     "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
+      "firebase.json"
     ],
     "redirects": [
       {
         "source": "/faq",
         "destination": "/#/",
+        "type" : 301
+      },
+      {
+        "source": "/components",
+        "destination": "/#/",
+        "type" : 301
+      },
+      {
+        "source": "/patterns",
+        "destination": "/#/",
+        "type" : 301
+      },
+      {
+        "source": "/android-application",
+        "destination": "/#/application",
         "type" : 301
       },
       {
