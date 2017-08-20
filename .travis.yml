@@ -6,6 +6,9 @@ branches:
   only:
     - master
 
+script:
+  - echo "Deploying!"
+
 install:
   - npm install -g firebase-tools
 
