@@ -9,5 +9,5 @@ branches:
 install:
   - npm install -g firebase-tools
 
-after_success:
+after_script:
   - firebase deploy --token $FIREBASE_API_TOKEN
