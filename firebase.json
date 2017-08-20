@@ -1,0 +1,42 @@
+{
+  "hosting": {
+    "public": "/",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/faq",
+        "destination": "/#/",
+        "type" : 301
+      },
+      {
+        "source": "/progress",
+        "destination": "/#/progress",
+        "type" : 301
+      },
+      {
+        "source": "/rating-bar",
+        "destination": "/#/rating-bar",
+        "type" : 301
+      },
+      {
+        "source": "/snackbars-and-toasts",
+        "destination": "/#/snackbars-and-toasts",
+        "type" : 301
+      },
+      {
+        "source": "/buttons",
+        "destination": "/#/buttons",
+        "type" : 301
+      },
+      {
+        "source" : "/bottom-navigation",
+        "destination" : "/#/bottom-navigation",
+        "type" : 301
+      }
+    ]
+  }
+}
