@@ -9,7 +9,7 @@
   - [Pickers]()
   - [Progress](/progress)
   - [Rating Bar](/rating-bar)
-  - [Selection controls]()
+  - [Selection controls](/selection_controls)
   - [Sliders](/not_found)
   - [Snackbars & Toasts](/snackbars-and-toasts)
   - [Steppers](/not_found)
