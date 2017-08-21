@@ -5,7 +5,7 @@
 ![](_images/raised-button-intro-v2.png)
 
 ?> From google material design [documentation](http://www.google.com.ua/design/spec/components/buttons.html#buttons-flat-raised-buttons).
-A typically rectangular material button that lifts and displays ink reactions on press.
+<br><br>A typically rectangular material button that lifts and displays ink reactions on press.
 
 ### How to add?
 
@@ -66,8 +66,7 @@ II. Apply this style to your `Button` via `android:theme` attribute.
 ![](_images/flat-button-intro-v2.png)
 
 ?> From google material design [documentation](http://www.google.com.ua/design/spec/components/buttons.html#buttons-flat-raised-buttons).
-A button made of ink that displays ink reactions on press but does not lift.
-
+<br><br>A button made of ink that displays ink reactions on press but does not lift.
 
 ### How to add?
 
