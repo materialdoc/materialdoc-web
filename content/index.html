@@ -40,6 +40,7 @@
     plugins: [
       function (hook, vm) {
         hook.beforeEach(function (html) {
+          var social = '<div class="addthis_inline_share_toolbox"></div>'
           var url = 'https://github.com/materialdoc/materialdoc-web/blob/master/docs/' + vm.route.file
           var editHtml = '<a class="edit-this-page" target="_blank" href="' + url + '">Edit this page on GitHub<\/a>\n'
           var footer = [
@@ -47,6 +48,7 @@
           ]
           return html
             + '\n----\n'
+            + social
             + editHtml
             + footer.join('')
         })
