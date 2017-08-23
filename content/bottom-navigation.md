@@ -1,6 +1,6 @@
 # Bottom navigation
 
-![](_images/bottom-navigation-1.png)
+![](images/bottom-navigation-1.png)
 
 ?>From google material design [documentation](https://material.io/guidelines/components/bottom-navigation.html).
 Bottom navigation bars make it easy to explore and switch between top-level views in a single tap.
@@ -56,7 +56,7 @@ IV. Declare `BottomNavigationView` inside your `layout.xml` file.
 ```
 
 ### How to style?
-![](_images/bottom-navigation-2.png)
+![](images/bottom-navigation-2.png)
 
 I. Define custom color for navigation bar.
 

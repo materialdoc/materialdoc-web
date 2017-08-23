@@ -2,7 +2,7 @@
 
 ## Raised Button
 
-![](_images/raised-button-intro-v2.png)
+![](images/raised-button-intro-v2.png)
 
 ?> From google material design [documentation](http://www.google.com.ua/design/spec/components/buttons.html#buttons-flat-raised-buttons).
 <br><br>A typically rectangular material button that lifts and displays ink reactions on press.
@@ -34,7 +34,7 @@ III. Declare your `Button` inside any `layout.xml` file
 
 ### How to style?
 
-![](_images/raised-button-style-v2.png)
+![](images/raised-button-style-v2.png)
 
 I. Declare custom style in your `styles.xml` file.
 
@@ -63,7 +63,7 @@ II. Apply this style to your `Button` via `android:theme` attribute.
 
 ## Flat Button
 
-![](_images/flat-button-intro-v2.png)
+![](images/flat-button-intro-v2.png)
 
 ?> From google material design [documentation](http://www.google.com.ua/design/spec/components/buttons.html#buttons-flat-raised-buttons).
 <br><br>A button made of ink that displays ink reactions on press but does not lift.
@@ -96,7 +96,7 @@ III. Declare your `Button` inside any `layout.xml` file with `Borderless` style.
 
 ### How to style?
 
-![](_images/flat-button-style-v2.png)
+![](images/flat-button-style-v2.png)
 
 I. Declare custom style in your `styles.xml` file.
 

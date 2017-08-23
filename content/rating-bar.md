@@ -1,6 +1,6 @@
 # Rating Bar
 
-![](_images/rating-bar-1.png)
+![](images/rating-bar-1.png)
 
 ?> From google [documentation](http://developer.android.com/reference/android/widget/RatingBar.html).
 A RatingBar is an extension of SeekBar and ProgressBar that shows a rating in stars. The user can touch/drag or use arrow keys to set the rating when using the default size RatingBar. The smaller RatingBar style ([ratingBarStyleSmall](http://developer.android.com/reference/android/R.attr.html#ratingBarStyleSmall)) and the larger indicator-only style ([ratingBarStyleIndicator](http://developer.android.com/reference/android/R.attr.html#ratingBarStyleIndicator)) do not support user interaction and should only be used as indicators.
@@ -36,7 +36,7 @@ III. Declare your `RatingBar` inside any `layout.xml` file.
 
 ### How to style?
 
-![](_images/rating-bar-2.png)
+![](images/rating-bar-2.png)
 
 I. Declare custom style in your `styles.xml` file.
 

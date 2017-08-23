@@ -2,7 +2,7 @@
 
 ## Snack Bar
 
-![](_images/snack-bar-1.png)
+![](images/snack-bar-1.png)
 
 ?> From google material design [documentation](http://www.google.com.ua/design/spec/components/snackbars-toasts.html#).
 Snackbars provide lightweight feedback about an operation by showing a brief message at the bottom of the screen. Snackbars can contain an action.
@@ -79,7 +79,7 @@ Parameter `event` from `onDismissed()` is one of predefined constants in [Snackb
 
 #### Actions
 
-![](_images/snack-bar-2.png)
+![](images/snack-bar-2.png)
 
 Snackbar can contain an action. To add it call `setAction()` method.
 
@@ -113,7 +113,7 @@ To enable swipe-to-dismiss and automatically moving of widgets like [FloatingAct
 
 ### How to style?
 
-![](_images/snack-bar-3.png)
+![](images/snack-bar-3.png)
 
 #### With theme
 
@@ -165,7 +165,7 @@ snackbarView.setBackgroundColor(Color.MAGENTA);
 
 ?>Added in [25.1.0 revision of Android Support Library](https://developer.android.com/topic/libraries/support-library/revisions.html#).
 
-![](_images/snack-bar-4.png)
+![](images/snack-bar-4.png)
 
 I. Declare custom layout in your values/layout folder.
 
@@ -336,7 +336,7 @@ customSnackbar.show();
 
 ## Toast
 
-![](_images/toast-1.png)
+![](images/toast-1.png)
 
 ?> From google material design [documentation](http://www.google.com.ua/design/spec/components/snackbars-toasts.html#).
 Android also provides a toast, primarily used for system messaging. Toasts are similar to snackbars but do not contain actions and cannot be swiped off screen.
@@ -387,7 +387,7 @@ toast.setGravity(gravity, xOffset, yOffset);
 
 ### How to style?
 
-![](_images/toast-2.png)
+![](images/toast-2.png)
 
 #### With code
 

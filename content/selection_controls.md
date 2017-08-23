@@ -2,7 +2,7 @@
 
 ## Check Box
 
-![](_images/check-box-intro-v1.png)
+![](images/check-box-intro-v1.png)
 
 ?> From google material design [documentation](https://www.google.com/design/spec/components/selection-controls.html#).
 <br><br>Checkboxes allow the user to select multiple options from a set.
@@ -37,7 +37,7 @@ III. Declare your `CheckBox` inside any `layout.xml` file
 
 ### How to style?
 
-![](_images/check-box-style-v1.png)
+![](images/check-box-style-v1.png)
 
 I. Declare custom style in your `styles.xml` file.
 
@@ -61,7 +61,7 @@ II. Apply this style to your `CheckBox` via `android:theme` attribute.
 
 ## Radio Button
 
-![](_images/radio-button-intro-v1.png)
+![](images/radio-button-intro-v1.png)
 
 ?> From google material design [documentation](https://www.google.com/design/spec/components/selection-controls.html#selection-controls-radio-button).
 <br><br>Radio buttons allow the user to select one option from a set. Use radio buttons for exclusive selection if you think that the user needs to see all available options side-by-side.
@@ -96,7 +96,7 @@ III. Declare your `RadioButton` inside any `layout.xml` file
 
 ### How to style?
 
-![](_images/radio-button-style-v1.png)
+![](images/radio-button-style-v1.png)
 
 I. Declare custom style in your `styles.xml` file.
 
@@ -120,7 +120,7 @@ II. Apply this style to your `RadioButton` via `android:theme` attribute.
 
 ## Switch
 
-![](_images/switch-intro-v1.png)
+![](images/switch-intro-v1.png)
 
 ?> From google material design [documentation](https://www.google.com/design/spec/components/selection-controls.html#selection-controls-switch).
 <br><br>On/off switches toggle the state of a single settings option. The option that the switch controls, as well as the state it’s in, should be made clear from the corresponding inline label. Switches take on the same visual properties of the radio button.
@@ -156,7 +156,7 @@ III. Declare your `SwitchCompat` inside any `layout.xml` file
 
 ### How to style?
 
-![](_images/switch-style-v1.png)
+![](images/switch-style-v1.png)
 
 I. Declare custom style in your `styles.xml` file.
 
