@@ -23,25 +23,14 @@ com.android.support:design:23.1.0
 
 ### Who are the authors?
 
-More stars - more article was written.
-
-:star::star::star::star::star:
-
-* [Saúl Molinero](http://saulmm.github.io/)
 * [Dmytro Danylyk](http://www.dmytrodanylyk.com/)
 * [Yakiv Mosman](http://www.yakivmospan.com/)
-
-:star::star::star::star:
+* [Saúl Molinero](http://saulmm.github.io/)
 * [Roman Danylyk](https://github.com/romandanylyk)
 * Volodymyr Yatsykiv
-
-:star::star::star:
-
 * [Miguel Catalan Bañuls](https://geekytheory.com)
 * [Luis G. Valle](http://lgvalle.xyz)
 * Saúl Díaz González
-
-:star::star:
 * [Antonio Leiva](http://antonioleiva.com)
 * [Alexandru Simonescu](http://alexsimo.com)
 * [Paresh Mayani](http://www.technotalkative.com/)
