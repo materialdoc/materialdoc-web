@@ -3,7 +3,7 @@
   - [Buttons: Floating Action Button](/fab)
   - [Bottom navigation](/bottom-navigation)
   - [Bottom sheets](/bottom-sheets)
-  - [Cards]()
+  - [Cards](/cards)
   - [Dialogs]()
   - [Menus](/menus)
   - [Pickers]()
