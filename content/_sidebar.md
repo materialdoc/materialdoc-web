@@ -6,7 +6,7 @@
   - [Cards](/components/cards)
   - [Dialogs]()
   - [Menus](/components/menus)
-  - [Pickers]()
+  - [Pickers](/components/pickers)
   - [Progress](/components/progress)
   - [Rating Bar](/components/rating-bar)
   - [Selection controls](/components/selection_controls)
