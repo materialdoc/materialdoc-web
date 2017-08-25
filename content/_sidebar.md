@@ -13,7 +13,7 @@
   - [Snackbars & Toasts](/snackbars-and-toasts)
   - [Tabs]()
   - [Text fields](/text-fields)
-  - [Toolbars]()
+  - [Toolbars](/toolbars)
 
 - Patterns
   - [Launch screens]()
