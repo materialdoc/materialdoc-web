@@ -4,7 +4,7 @@
 
 ![](images/raised-button-intro-v2.png)
 
-?> From google material design [documentation](http://www.google.com.ua/design/spec/components/buttons.html#buttons-flat-raised-buttons).
+?> From google material design [documentation](https://material.io/guidelines/components/buttons.html#buttons-raised-buttons).
 <br><br>A typically rectangular material button that lifts and displays ink reactions on press.
 
 ### How to add?
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 ```
 III. Declare your `Button` inside any `layout.xml` file
 
-```
+```xml
 <Button
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -38,7 +38,7 @@ III. Declare your `Button` inside any `layout.xml` file
 
 I. Declare custom style in your `styles.xml` file.
 
-```
+```xml
 <style name="MyButton" parent="Theme.AppCompat.Light">
     <item name="colorControlHighlight">@color/indigo</item>
     <item name="colorButtonNormal">@color/pink</item>
@@ -47,7 +47,7 @@ I. Declare custom style in your `styles.xml` file.
 
 II. Apply this style to your `Button` via `android:theme` attribute.
 
-```
+```xml
 <Button
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -65,7 +65,7 @@ II. Apply this style to your `Button` via `android:theme` attribute.
 
 ![](images/flat-button-intro-v2.png)
 
-?> From google material design [documentation](http://www.google.com.ua/design/spec/components/buttons.html#buttons-flat-raised-buttons).
+?> From google material design [documentation](https://material.io/guidelines/components/buttons.html#buttons-flat-buttons).
 <br><br>A button made of ink that displays ink reactions on press but does not lift.
 
 ### How to add?
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
 ```
 III. Declare your `Button` inside any `layout.xml` file with `Borderless` style.
 
-```
+```xml
 <Button
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -100,7 +100,7 @@ III. Declare your `Button` inside any `layout.xml` file with `Borderless` style.
 
 I. Declare custom style in your `styles.xml` file.
 
-```
+```xml
 <style name="MyButton" parent="Theme.AppCompat.Light">
     <item name="colorControlHighlight">@color/pink</item>
 </style>
@@ -108,7 +108,7 @@ I. Declare custom style in your `styles.xml` file.
 
 III. Apply this style to your `Button` via `android:theme` attribute.
 
-```
+```xml
 <Button
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"

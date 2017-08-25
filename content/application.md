@@ -4,11 +4,6 @@ I am happy to announce that we just released open source [Android application](h
 
 You can [download apk](https://play.google.com/store/apps/details?id=com.materialdoc) and check how material components will look on different Android versions.
 
-**Authors**
-
-- Roman Danylyk
-- Dmytro Danylyk
-
 <div>
     <table>
         <tr>
