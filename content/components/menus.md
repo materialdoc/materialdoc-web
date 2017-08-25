@@ -1,6 +1,6 @@
 # Menus
 
-![](images/anglerMMB29Psaulmm01162016211546.png)
+![](images/menus-1.png)
 
 ?> From the google material design [documentation](https://material.io/guidelines/components/menus.html)
 <br>
@@ -71,7 +71,7 @@ public boolean onCreateOptionsMenu(Menu menu) {
 
 ### How to style?
 
-![](images/custom_image.png)
+![](images/menus-2.png)
 
 I. Declare a custom style extending the `ThemeOverlay.AppCompat.Dark` theme in your `style.xml` file.
 

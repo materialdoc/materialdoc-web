@@ -8,7 +8,7 @@
 <br>
 <br>Because launching your app while displaying a blank canvas increases its perceived loading time, consider using a placeholder UI or a branded launch screen.
 
-## How to add?
+### How to add?
 
 I. Declare custom `drawable.xml` file with `items` for launch screen background.
 

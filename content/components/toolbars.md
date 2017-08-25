@@ -1,6 +1,6 @@
 # Toolbars
 
-![](images/anglerMMB29Msaulmm12282015010055.png)
+![](images/toolbar-1.png)
 
 
 ?> From the google material design [documentation](https://material.io/guidelines/components/toolbars.html#)
@@ -43,7 +43,7 @@ III. Declare your `Toolbar` inside any `layout.xml` file.
 
 ## How to style?
 
-![](images/anglerMMB29Msaulmm12292015005810.png)
+![](images/toolbar-2.png)
 
 I. Declare custom styles in your `style.xml` file.
 
@@ -89,7 +89,7 @@ II. Apply these styles to your `Toolbar` via `style`, `tittleTextAppearance` and
 
 ## Toolbar with menu icons
 
-![](images/anglerMMB29Msaulmm12282015180321.png)
+![](images/toolbar-3.png)
 
 
 I. Create items for every action.
@@ -161,7 +161,7 @@ public boolean onMenuItemClick(MenuItem item) {
 
 ## Toolbar with navigation back icon
 
-![](images/anglerMMB29Msaulmm12282015180702.png)
+![](images/toolbar-4.png)
 
 I. Declare custom style in your `styles.xml` file.
 
@@ -201,7 +201,7 @@ toolbar.setNavigationOnClickListener(new View.OnClickListener() {
 
 ## Toolbar with blank space
 
-![](images/anglerMMB29Msaulmm12282015180943.png)
+![](images/toolbar-5.png)
 
 I. Declare custom style in your `styles.xml` file.
 
