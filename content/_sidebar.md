@@ -20,3 +20,4 @@
   - [Navigation drawer]()
   - [Notifications]()
   - [Scrolling techniques]()
+  - [Swipe to refresh](/swipe-to-refresh)
