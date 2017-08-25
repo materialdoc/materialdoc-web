@@ -16,7 +16,7 @@
   - [Toolbars](/toolbars)
 
 - Patterns
-  - [Launch screens]()
+  - [Launch screens](/launch-screen)
   - [Navigation drawer]()
   - [Notifications]()
   - [Scrolling techniques]()
