@@ -35,3 +35,9 @@ com.android.support:design:23.1.0
 * [Alexandru Simonescu](http://alexsimo.com)
 * [Paresh Mayani](http://www.technotalkative.com/)
 * [Gonzalo Toledano](http://gnzlt.com)
+
+### Want to contribute?
+
+Just send pull request to [github.com/materialdoc](https://github.com/materialdoc/materialdoc-web) `master` branch.
+
+Also make sure you have read [how to contribute](/how_to_contribute) section.

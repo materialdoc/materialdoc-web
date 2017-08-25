@@ -1,6 +1,6 @@
 # Pickers
 
-## Date Pickers
+## Date Picker
 
 <img src="images/date-picker-1.png" width="360"/>
 
@@ -91,7 +91,7 @@ IV. Show your `DatePickerDialog` with the `show` method.
 datePickerDialog.show();
 ```
 
-## Time Pickers
+## Time Picker
 
 <img src="/images/time-picker-1.png" width="360"/>
 
@@ -196,3 +196,136 @@ TimePickerDialog dialog = new TimePickerDialog(
 ```
 
 ?> You can use your custom style setting its parent with the `Theme.AppCompat.Light.Dialog.Alert` value
+
+# Color Picker
+
+<img src="images/color-picker-1.png" width="480"/>
+
+?> From Google material design [documentation](https://www.google.com/design/spec/components/pickers.html)
+<br>
+<br>Pickers provide a simple way to select a single value from a pre-determined set.
+
+### How to add?
+
+I. Clone the color picker project from the [Google open source repository](https://android.googlesource.com/platform/frameworks/opt/colorpicker/).
+
+```
+git clone https://android.googlesource.com/platform/frameworks/opt/colorpicker
+```
+
+II. Import a new module in android studio with the **New/Import module** menu, choosing the path where the project was cloned.
+
+III. Compile the new module as a dependency of your android project
+
+```
+dependencies {
+    compile project(':colorpicker')
+}
+```
+
+IV. Declare some colors in your resources file `colors.xml`
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#F6402C</color>
+    <color name="pink">#EB1460</color>
+    <color name="purple">#9C1AB1</color>
+    <color name="deep_purple">#6633B9</color>
+    <color name="indigo">#3D4DB7</color>
+    <color name="blue">#1093F5</color>
+    <color name="light_blue">#00A6F6</color>
+    <color name="cyan">#00BBD5</color>
+    <color name="teal">#009687</color>
+    <color name="green">#46AF4A</color>
+    <color name="light_green">#88C440</color>
+    <color name="lime">#CCDD1E</color>
+    <color name="yellow">#FFEC16</color>
+    <color name="amber">#FFC100</color>
+    <color name="orange">#FF9800</color>
+    <color name="deep_orange">#FF5505</color>
+    <color name="brown">#7A5547</color>
+    <color name="grey">#9D9D9D</color>
+    <color name="blue_grey">#5E7C8B</color>
+</resources>
+```
+
+V. Init your `ColorPickerDialog` with a title, an array of colors, the default selected color, the number of columns and the size of the shown colors.
+
+```java
+ColorPickerDialog colorPickerDialog = new ColorPickerDialog();
+colorPickerDialog.initialize(
+    R.string.title, colors, selectedColor, numColumns, colors.length);
+```
+
+VI. Since `ColorPickerDialog` extends from a `DialogFragment` show it with the `show` method setting it with a `FragmentManager` and a tag.
+
+```java
+colorPickerDialog.show(getFragmentManager(), tag);
+```
+
+### How to style?
+
+<img src="images/color-picker-2.png" width="480"/>
+
+I. Create a `ColorPickerPalette` in a layout file.
+
+```xml
+<com.android.colorpicker.ColorPickerPalette
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/palette"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="16dp"
+    />
+```
+
+?> The `ColorPickerPalette` extends from the `TableLayout` class, you can use the `TableLayout` view group parameters to  style it.
+
+II. Declare a dark style for the dialog which will contain the `ColorPickerPalette`.
+
+```xml
+<style name="MyDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+    <item name="colorAccent">@color/teal_light</item>
+    <item name="android:textColorPrimary">@android:color/white</item>
+</style>
+```
+
+III. Inflate your `ColorPickerPalette` in a view object.
+
+```java
+LayoutInflater layoutInflater = LayoutInflater.from(context);
+ColorPickerPalette colorPickerPalette =
+    (ColorPickerPalette) layoutInflater.inflate(R.layout.custom_picker, null);
+```
+
+IV. Configure the `ColorPickerPalette` with a number of colors and a listener.
+
+```java
+colorPickerPalette.init(colors.length, columns, mOnColorSelectedListener);
+```
+
+V. Call the `colorPickerPalette` method of `ColorPickerPalette` with an array of your colors and the selected default color.
+
+```java
+colorPickerPalette.drawPalette(colors, selectedColor);
+```
+
+VI. Create your dialog via `AlertDialog.Builder` with your dark theme and your view as the content.
+
+```java
+AlertDialog alert = new AlertDialog.Builder(this, R.style.MyDialogTheme)
+    .setTitle(R.string.title_color_picker)
+    .setPositiveButton(android.R.string.ok, mOnClickListener)
+    .setNegativeButton(android.R.string.no, mOnClickListener)
+    .setView(colorPickerPalette)
+    .create();
+```
+
+VII. Show your dialog
+
+```java
+alert.show();
+```
