@@ -1,9 +1,9 @@
 # Bottom navigation
 
-![](images/bottom-navigation-1.png)
+![](../images/bottom-navigation-1.png)
 
-?>From google material design [documentation](https://material.io/guidelines/components/bottom-navigation.html).
-Bottom navigation bars make it easy to explore and switch between top-level views in a single tap.
+!!! note "From google material design [documentation](https://material.io/guidelines/components/bottom-navigation.html)."
+    Bottom navigation bars make it easy to explore and switch between top-level views in a single tap.
 
 ### How to add?
 
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
 III. Declare navigation items in `menu` file.
 
-```
+```xml
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
             android:id="@+id/recents"
@@ -47,7 +47,7 @@ III. Declare navigation items in `menu` file.
 
 IV. Declare `BottomNavigationView` inside your `layout.xml` file.
 
-```
+```xml
 <android.support.design.widget.BottomNavigationView
     android:id="@+id/bottomNavigationView"
     android:layout_width="match_parent"
@@ -56,11 +56,11 @@ IV. Declare `BottomNavigationView` inside your `layout.xml` file.
 ```
 
 ### How to style?
-![](images/bottom-navigation-2.png)
+![](../images/bottom-navigation-2.png)
 
 I. Define custom color for navigation bar.
 
-```
+```xml
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_checked="false" android:color="@color/pink"/>
     <item android:color="@android:color/white"/>
@@ -69,7 +69,7 @@ I. Define custom color for navigation bar.
 
 II.  Define custom backgrounds for navigation bar items.
 
-```
+```xml
 // res/drawable, to support devices lower then 21 API
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_pressed="true" android:drawable="@android:color/white"/>
@@ -84,7 +84,7 @@ II.  Define custom backgrounds for navigation bar items.
 
 III. Declare custom style in your `styles.xml` file.
 
-```
+```xml
 <style name="BottomNavigation">
     <item name="android:background">@color/indigo</item>
     <item name="itemBackground">@drawable/navigation_bar_item_bg</item>
@@ -97,7 +97,7 @@ III. Declare custom style in your `styles.xml` file.
 
 IV. Apply this style to your `BottomNavigationView` via `style` attribute.
 
-```
+```xml
 <android.support.design.widget.BottomNavigationView
     android:id="@+id/bottomNavigationView"
     android:layout_width="match_parent"
@@ -132,8 +132,6 @@ navigationView= (BottomNavigationView) findViewById(R.id.bottomNavigationView);
 navigationView.getMenu().getItem(itemToSelect).setChecked(true);
 ```
 
-!>Note. Works correctly starting from 25.1.0 version of design support library.
-
 ### Get selected item
 
 There is no API to get selected item. Instead you can :
@@ -154,7 +152,5 @@ int getSelectedItem() {
     return 0;
 }
 ```
-
-!>Note. Works correctly starting from 25.1.0 version of design support library.
 
 II. Add global `selectedItem` variable and update it each time you do select item programmatically and each time you receive `OnNavigationItemSelected` event.

@@ -8,6 +8,9 @@ site_url: 'https://materialdoc.com'
 repo_name: 'GitHub'
 repo_url: 'https://github.com/materialdoc/materialdoc-web'
 
+# Copyright
+copyright: 'Copyright &copy; 2017 - 2018 Dmytro Danylyk'
+
 # Documentation and theme
 theme_dir: 'material'
 site_favicon: 'images/favicon.ico'
@@ -28,7 +31,7 @@ extra:
 markdown_extensions:
   - admonition
   - meta
-  - codehilite(guess_lang=false)
+  - codehilite(linenums=true)
   - toc(permalink=true)
 
 # Google Analytics

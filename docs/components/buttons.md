@@ -57,16 +57,18 @@ II. Apply this style to your `Button` via `android:theme` attribute.
 
 ### Compatibility issues
 
-!>  To change `Button` color of pressed state you can use `colorControlHighlight` theme attribute, however it will only affect Lollipop version.
+!!! note
+    To change `Button` color of pressed state you can use `colorControlHighlight` theme attribute, however it will only affect Lollipop version.
 
-!>  Android `elevation` attribute is only available on Lollipop devices therefore you will not see shadow around `Button` on pre Lollipop devices.
+!!! note
+    Android `elevation` attribute is only available on Lollipop devices therefore you will not see shadow around `Button` on pre Lollipop devices.
 
 ## Flat Button
 
 ![](../images/flat-button-intro-v2.png)
 
-?> From google material design [documentation](https://material.io/guidelines/components/buttons.html#buttons-flat-buttons).
-<br><br>A button made of ink that displays ink reactions on press but does not lift.
+!!! note "From google material design [documentation](https://material.io/guidelines/components/buttons.html#buttons-flat-buttons).
+    A button made of ink that displays ink reactions on press but does not lift.
 
 ### How to add?
 

@@ -1,10 +1,11 @@
 # Bottom Sheets
 
-<img src="images/expand.gif" width="480"/>
+<img src="/images/expand.gif" width="480"/>
 
-?> From google material design [documentation](https://material.io/guidelines/components/bottom-sheets.html).
-<br>
-<br>A bottom sheet is a sheet of material that slides up from the bottom edge of the screen. Bottom sheets are displayed only as a result of a user-initiated action, and can be swiped up to reveal additional content. A bottom sheet can be a temporary modal surface or a persistent structural element of an app.
+!!! note "From google material design [documentation](https://material.io/guidelines/components/bottom-sheets.html)."
+    A bottom sheet is a sheet of material that slides up from the bottom edge of the screen.
+
+    Bottom sheets are displayed only as a result of a user-initiated action, and can be swiped up to reveal additional content. A bottom sheet can be a temporary modal surface or a persistent structural element of an app.
 
 ### How to add?
 
@@ -38,7 +39,8 @@ II. Set the `app:layout_behavior` attribute with the value  `@string/bottom_shee
 </LinearLayout>
 ```
 
-?> You can use the `behavior_peekHeight` attribute to set the default height of the bottom sheet.
+!!! note
+    You can use the `behavior_peekHeight` attribute to set the default height of the bottom sheet.
 
 III. Add your view which implements the bottom sheet behavior as a direct child of a `CoordinatorLayout`.
 
@@ -80,7 +82,8 @@ III. Add your view which implements the bottom sheet behavior as a direct child 
 </android.support.design.widget.CoordinatorLayout>
 ```
 
-?> You can wrap your views and viewgroups under `<include>` tags in order to keep clean your layouts.
+!!! note
+    You can wrap your views and viewgroups under `<include>` tags in order to keep clean your layouts.
 
 IV. Get a reference of `BottomSheetBehavior` with a reference of  the view which has the bottom behavior set. Use the `from` method of `BottomSheetBehavior`.
 
@@ -103,11 +106,10 @@ You can handle these states via the `setState` method:
 
 ## Modal bottom sheets
 
-<img src="images/modal.gif" width="480"/>
+<img src="/images/modal.gif" width="480"/>
 
-?> From google material design [documentation](https://material.io/guidelines/components/bottom-sheets.html#bottom-sheets-modal-bottom-sheets).
-<br>
-<br>Modal bottom sheets are alternatives to menus or simple dialogs. They can also present deep-linked content from other apps. They are primarily for mobile.
+!!! note "From google material design [documentation](https://material.io/guidelines/components/bottom-sheets.html#bottom-sheets-modal-bottom-sheets)."
+    Modal bottom sheets are alternatives to menus or simple dialogs. They can also present deep-linked content from other apps. They are primarily for mobile.
 
 I. Create a class extending the `BottomSheetDialogFragment` inflated with a layout which will be used as the content of your modal bottom sheet.
 
@@ -137,7 +139,7 @@ modalBottomSheet.show(getSupportFragmentManager(), "bottom sheet");
 ```
 
 ### How to anchor views?
-<img src="images/expand-2.gif" width="480"/>
+<img src="/images/expand-2.gif" width="480"/>
 
 I. Add the view that will be anchored to the bottom sheet as a direct child of the `CoordinatorLayout`
 
