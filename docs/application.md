@@ -6,10 +6,10 @@ You can [download apk](https://play.google.com/store/apps/details?id=com.materia
     <table>
         <tr>
             <td>
-                <img width="350" src="images/screenshot-1-1.png">
+                <img width="350" src="/images/screenshot-1-1.png">
              </td>
             <td>
-                <img width="350" src="images/screenshot-2-1.png">
+                <img width="350" src="/images/screenshot-2-1.png">
              </td>
         </tr>
     </table>

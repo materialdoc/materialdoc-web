@@ -2,10 +2,12 @@
 
 ## Circular
 
-![](images/circular-progress-1.gif)
+![](../images/circular-progress-1.gif)
 
-?> From google material design [documentation](http://www.google.com/design/spec/components/progress-activity.html#).
-Minimize visual changes that occur while your app loads content by representing each operation with a single activity indicator. For example, a refresh operation should display either a refresh bar or an activity circle, but not both.
+!!! note "From google material design [documentation](https://material.io/guidelines/components/progress-activity.html#)."
+    Minimize visual changes that occur while your app loads content by representing each operation with a single activity indicator.
+
+    For example, a refresh operation should display either a refresh bar or an activity circle, but not both.
 
 ### How to add?
 
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
 III. Declare your `ProgressBar` inside any `layout.xml` file.
 
-```
+```xml
 <ProgressBar
     style="@style/Widget.AppCompat.ProgressBar"
     android:layout_width="wrap_content"
@@ -36,11 +38,11 @@ III. Declare your `ProgressBar` inside any `layout.xml` file.
 
 ### How to style?
 
-![](images/circular-progress-2.gif)
+![](../images/circular-progress-2.gif)
 
 I. Declare custom style in your `styles.xml` file.
 
-```
+```xml
 <style name="CircularProgress" parent="Theme.AppCompat.Light">
     <item name="colorAccent">@color/indigo</item>
 </style>
@@ -48,7 +50,7 @@ I. Declare custom style in your `styles.xml` file.
 
 II. Apply this style to your `ProgressBar` via `android:theme` attribute.
 
-```
+```xml
 <ProgressBar
     android:theme="@style/CircularProgress"
     style="@style/Widget.AppCompat.ProgressBar"
@@ -56,18 +58,12 @@ II. Apply this style to your `ProgressBar` via `android:theme` attribute.
     android:layout_height="wrap_content"/>
 ```
 
-### Compatibility issues
-
-!>`ProgressBar` is not displayed in material style on pre Lollipop devices.
-
-![](images/circular-progress-3.gif)
-
 ## Linear
 
-![](images/linear-progress-1.gif)
+![](../images/linear-progress-1.gif)
 
-?> From google material design [documentation](http://www.google.com/design/spec/components/progress-activity.html#).
-A linear progress indicator should always fill from 0% to 100% and never decrease in value. It should be represented by bars on the edge of a header or sheet that appear and disappear.
+!!! note "From google material design [documentation](https://material.io/guidelines/components/progress-activity.html#)."
+    A linear progress indicator should always fill from 0% to 100% and never decrease in value. It should be represented by bars on the edge of a header or sheet that appear and disappear.
 
 ### How to add?
 
@@ -89,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
 III. Declare your `ProgressBar` inside any `layout.xml` file.
 
-```
+```xml
 <ProgressBar
     style="@style/Widget.AppCompat.ProgressBar.Horizontal"
     android:layout_width="wrap_content"
@@ -100,7 +96,7 @@ III. Declare your `ProgressBar` inside any `layout.xml` file.
 
 To create indeterminate `ProgressBar` set `android:indeterminate` attribute to `true`.
 
-```
+```xml
 <ProgressBar
     style="@style/Widget.AppCompat.ProgressBar.Horizontal"
     android:layout_width="wrap_content"
@@ -112,7 +108,7 @@ To create indeterminate `ProgressBar` set `android:indeterminate` attribute to `
 
 I. To create determinate `ProgressBar` set `android:indeterminate` attribute to `false`.
 
-```
+```xml
 <ProgressBar
     android:id="@+id/progressBar"
     style="@style/Widget.AppCompat.ProgressBar.Horizontal"
@@ -139,7 +135,7 @@ progressBar.setProgress(50);
 
 I. To create buffered `ProgressBar` set `android:indeterminate` attribute to `false`.
 
-```
+```xml
 <ProgressBar
     android:id="@+id/progressBar"
     style="@style/Widget.AppCompat.ProgressBar.Horizontal"
@@ -168,7 +164,7 @@ progressBar.setSecondaryProgress(50);
 
 To create indeterminate `ProgressBar` set `android:indeterminate` attribute to `true`.
 
-```
+```xml
 <ProgressBar
     android:id="@+id/progressBar"
     style="@style/Widget.AppCompat.ProgressBar.Horizontal"
@@ -187,11 +183,11 @@ progressBar.setIndeterminate(false);
 
 ### How to style?
 
-![](images/linear-progress-2.gif)
+![](../images/linear-progress-2.gif)
 
 I. Declare custom style in your `values-v21/styles.xml` file.
 
-```
+```xml
 <style name="LinearProgress" parent="Theme.AppCompat.Light">
     <item name="colorAccent">@color/indigo</item>
     <item name="android:progressBackgroundTint">@color/pink</item>
@@ -200,7 +196,7 @@ I. Declare custom style in your `values-v21/styles.xml` file.
 
 II. Apply this style to your `ProgressBar` via `android:theme` attribute.
 
-```
+```xml
 <ProgressBar
     android:theme="@style/LinearProgress"
     style="@style/Widget.AppCompat.ProgressBar.Horizontal"
@@ -208,15 +204,5 @@ II. Apply this style to your `ProgressBar` via `android:theme` attribute.
     android:layout_height="wrap_content"/>
 ```
 
-!>Note: `android:progressBackgroundTint` attribute is working only with determinate `ProgressBar`
-
-
-### Compatibility issues
-
-!>`ProgressBar` is not displayed in material style on pre Lollipop devices.
-
-![](images/linear-progress-3.gif)
-
-## Swipe down to refresh
-
-## Scroll up to load more
+!!! note
+    `android:progressBackgroundTint` attribute is working only with determinate `ProgressBar`

@@ -31,19 +31,19 @@ extra:
 markdown_extensions:
   - admonition
   - meta
-  - codehilite(linenums=true)
+  - codehilite
   - toc(permalink=true)
 
 # Google Analytics
 google_analytics:
-  - 'UA-XXXXXXXX-X'
+  - 'UA-69898504-1'
   - 'auto'
 
 pages:
     - Home: index.md
     - Components:
       - Buttons: components/buttons.md
-      - Buttons Floating Action Button: components/fab.md
+      - Buttons FAB: components/fab.md
       - Bottom navigation: components/bottom-navigation.md
       - Bottom sheets: components/bottom-sheets.md
       - Cards: components/cards.md

@@ -1,9 +1,11 @@
 # Rating Bar
 
-![](images/rating-bar-1.png)
+![](../images/rating-bar-1.png)
 
-?> From google [documentation](http://developer.android.com/reference/android/widget/RatingBar.html).
-A RatingBar is an extension of SeekBar and ProgressBar that shows a rating in stars. The user can touch/drag or use arrow keys to set the rating when using the default size RatingBar. The smaller RatingBar style ([ratingBarStyleSmall](http://developer.android.com/reference/android/R.attr.html#ratingBarStyleSmall)) and the larger indicator-only style ([ratingBarStyleIndicator](http://developer.android.com/reference/android/R.attr.html#ratingBarStyleIndicator)) do not support user interaction and should only be used as indicators.
+!!! note "From google [documentation](http://developer.android.com/reference/android/widget/RatingBar.html)."
+    A RatingBar is an extension of SeekBar and ProgressBar that shows a rating in stars. The user can touch/drag or use arrow keys to set the rating when using the default size RatingBar.
+
+    The smaller RatingBar style ([ratingBarStyleSmall](http://developer.android.com/reference/android/R.attr.html#ratingBarStyleSmall)) and the larger indicator-only style ([ratingBarStyleIndicator](http://developer.android.com/reference/android/R.attr.html#ratingBarStyleIndicator)) do not support user interaction and should only be used as indicators.
 
 ### How to add?
 
@@ -25,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
 III. Declare your `RatingBar` inside any `layout.xml` file.
 
-```
+```xml
 <RatingBar
     android:rating="3.5"
     android:stepSize="0.5"
@@ -36,11 +38,11 @@ III. Declare your `RatingBar` inside any `layout.xml` file.
 
 ### How to style?
 
-![](images/rating-bar-2.png)
+![](../images/rating-bar-2.png)
 
 I. Declare custom style in your `styles.xml` file.
 
-```
+```xml
 <style name="RatingBar" parent="Theme.AppCompat">
     <item name="colorControlNormal">@color/indigo</item>
     <item name="colorControlActivated">@color/pink</item>
@@ -49,7 +51,7 @@ I. Declare custom style in your `styles.xml` file.
 
 II. Apply this style to your `RatingBar` via `android:theme` attribute.
 
-```
+```xml
 <RatingBar
     android:theme="@style/RatingBar"
     android:rating="3"

@@ -2,10 +2,10 @@
 
 ## Snack Bar
 
-![](images/snack-bar-1.png)
+![](../images/snack-bar-1.png)
 
-?> From google material design [documentation](http://www.google.com.ua/design/spec/components/snackbars-toasts.html#).
-Snackbars provide lightweight feedback about an operation by showing a brief message at the bottom of the screen. Snackbars can contain an action.
+!!! note "From google material design [documentation](https://material.io/guidelines/components/snackbars-toasts.html)."
+    Snackbars provide lightweight feedback about an operation by showing a brief message at the bottom of the screen. Snackbars can contain an action.
 
 ### How to add?
 
@@ -31,7 +31,8 @@ Snackbar
 
 Parameter `view` is used to find parent. Snackbar will be displayed over it.
 
-!>Snackbar will try and find a parent `view` to hold Snackbar's view from the value given to view. Snackbar will walk up the view tree trying to find a suitable parent, which is defined as a `CoordinatorLayout` or the window decor's content view, whichever comes first.
+!!! note
+    Snackbar will try and find a parent `view` to hold Snackbar's view from the value given to view. Snackbar will walk up the view tree trying to find a suitable parent, which is defined as a `CoordinatorLayout` or the window decor's content view, whichever comes first.
 
 #### Duration
 
@@ -79,7 +80,7 @@ Parameter `event` from `onDismissed()` is one of predefined constants in [Snackb
 
 #### Actions
 
-![](images/snack-bar-2.png)
+![](../images/snack-bar-2.png)
 
 Snackbar can contain an action. To add it call `setAction()` method.
 
@@ -96,7 +97,7 @@ Snackbar
 
 To enable swipe-to-dismiss and automatically moving of widgets like [FloatingActionButton](https://developer.android.com/reference/android/support/design/widget/FloatingActionButton.html) use [CoordinatorLayout](https://developer.android.com/reference/android/support/design/widget/CoordinatorLayout.html) as your root layout.
 
-```
+```xml
 <android.support.design.widget.CoordinatorLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
@@ -113,13 +114,13 @@ To enable swipe-to-dismiss and automatically moving of widgets like [FloatingAct
 
 ### How to style?
 
-![](images/snack-bar-3.png)
+![](../images/snack-bar-3.png)
 
 #### With theme
 
 I. Declare custom style in your values/styles.xml file.
 
-```
+```xml
 <style name="SnackbarTheme" parent="Theme.AppCompat.Light">
     <item name="colorAccent">@color/indigo</item>
     <item name="android:textColor">@color/pink</item>
@@ -128,21 +129,21 @@ I. Declare custom style in your values/styles.xml file.
 
 II. Apply this style to your `Activity` via `android:theme` attribute in `AndroidManifest.xml` file.
 
-```
+```xml
 <activity
     android:name=".SnackbarActivity"
     android:theme="@style/SnackbarTheme">
 </activity>
 ```
 
-!> Note: Applying theme to `Activity` will apply `colorAccent` and `android:textColor` to all of its views.
+!!! note
+    Applying theme to `Activity` will apply `colorAccent` and `android:textColor` to all of its views.
 
 #### With code
 
 Get `Snackbar` view using `getView()` method and change it properties.
 
 ```java
-
 // create instance
 Snackbar snackbar = Snackbar.make(view, text, duration);
 
@@ -163,13 +164,11 @@ snackbarView.setBackgroundColor(Color.MAGENTA);
 
 #### With custom view
 
-?>Added in [25.1.0 revision of Android Support Library](https://developer.android.com/topic/libraries/support-library/revisions.html#).
-
-![](images/snack-bar-4.png)
+![](../images/snack-bar-4.png)
 
 I. Declare custom layout in your values/layout folder.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="horizontal"
@@ -209,15 +208,15 @@ I. Declare custom layout in your values/layout folder.
 </LinearLayout>
 ```
 
-!>Hints:
+!!! note
+    Use `@dimen/design_snackbar` values to match material design guidelines.
 
-- _Use _`@dimen/design_snackbar`_ values to match material design guidelines._
-- _Use `?attr/colorAccent` to apply your Application Theme changes to Snackbar._
+    Use `?attr/colorAccent` to apply your Application Theme changes to `Snackbar`.
 
 II. Extend [BaseTransientBottomBar](https://developer.android.com/reference/android/support/design/widget/BaseTransientBottomBar.html) class.
 
 ```java
-public class final CustomSnackbar extends BaseTransientBottomBar<CustomSnackbar> {
+public class CustomSnackbar extends BaseTransientBottomBar<CustomSnackbar> {
 
     /**
      * Constructor for the transient bottom bar.
@@ -236,7 +235,7 @@ public class final CustomSnackbar extends BaseTransientBottomBar<CustomSnackbar>
 III. Add [BaseTransientBottomBar.ContentViewCallback](https://developer.android.com/reference/android/support/design/widget/BaseTransientBottomBar.ContentViewCallback.html)
 
 ```java
-public class final CustomSnackbar ...{
+public class CustomSnackbar ... {
 
   ...
 
@@ -274,7 +273,7 @@ public class final CustomSnackbar ...{
 }
 ```
 
-IV. Add method to create Snackbar with custom layout and methods to fill it.
+IV. Add method to create `Snackbar` with custom layout and methods to fill it.
 
 ```java
 public class final CustomSnackbar ...{
@@ -336,10 +335,10 @@ customSnackbar.show();
 
 ## Toast
 
-![](images/toast-1.png)
+![](../images/toast-1.png)
 
-?> From google material design [documentation](http://www.google.com.ua/design/spec/components/snackbars-toasts.html#).
-Android also provides a toast, primarily used for system messaging. Toasts are similar to snackbars but do not contain actions and cannot be swiped off screen.
+!!! note "From google material design [documentation](https://material.io/guidelines/components/snackbars-toasts.html)."
+    Android also provides a toast, primarily used for system messaging. Toasts are similar to snackbars but do not contain actions and cannot be swiped off screen.
 
 ### How to add?
 
@@ -370,7 +369,8 @@ Toast toast= Toast.make(view, text, duration).show();
 toast.cancel(); //hide toast
 ```
 
-?>Close the view if it's showing, or don't show it if it isn't showing yet. You do not normally have to call this. Normally view will disappear on its own after the appropriate duration.
+!!! note
+    Close the view if it's showing, or don't show it if it isn't showing yet. You do not normally have to call this. Normally view will disappear on its own after the appropriate duration.
 
 #### Positioning
 
@@ -387,7 +387,7 @@ toast.setGravity(gravity, xOffset, yOffset);
 
 ### How to style?
 
-![](images/toast-2.png)
+![](../images/toast-2.png)
 
 #### With code
 
@@ -407,7 +407,7 @@ toast.getView().setBackgroundColor(getResources().getColor(R.color.indigo));
 
 I. Declare your custom view inside of any `layout.xml` file.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <TextView
         xmlns:android="http://schemas.android.com/apk/res/android"

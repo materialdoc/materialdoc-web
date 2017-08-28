@@ -1,12 +1,11 @@
 # Floating Action Button
 
-![Floating action button Mini](images/fab-1.png)
+![Floating action button Mini](../images/fab-1.png)
 
-?> From Google material design [documentation](https://material.io/guidelines/components/buttons-floating-action-button.html).
-<br>
-<br>A floating action button represents the primary action in an application. A floating action button is used for a promoted action.
-<br>
-<br>Shaped like a circled icon floating above the UI, it changes color upon focus and lifts upon selection. When pressed, it may contain more related actions.
+!!! note "From Google material design [documentation](https://material.io/guidelines/components/buttons-floating-action-button.html)."
+    A floating action button represents the primary action in an application. A floating action button is used for a promoted action.
+
+    Shaped like a circled icon floating above the UI, it changes color upon focus and lifts upon selection. When pressed, it may contain more related actions.
 
 ### How to add?
 I. In your `build.gradle`, add latest `appcompat` and `design` libraries.
@@ -37,7 +36,7 @@ III. Declare your `FloatingActionButton` inside any `layout.xml` file.
 
 ### How to style
 
-![Floating action button Mini](images/device-2016-01-02-153733.png)
+![Floating action button Mini](../images/device-2016-01-02-153733.png)
 
 #### Background color
 

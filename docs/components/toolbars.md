@@ -1,12 +1,9 @@
 # Toolbars
 
-![](images/toolbar-1.png)
+![](../images/toolbar-1.png)
 
-
-?> From the google material design [documentation](https://material.io/guidelines/components/toolbars.html#)
-<br>
-<br>Toolbars appear a step above the sheet of paper affected by their actions. When sheets scroll underneath toolbars, they are clipped and cannot pass through to the opposite side.
-
+!!! note "From the google material design [documentation](https://material.io/guidelines/components/toolbars.html#)"
+    Toolbars appear a step above the sheet of paper affected by their actions. When sheets scroll underneath toolbars, they are clipped and cannot pass through to the opposite side.
 
 ## How to add?
 
@@ -43,7 +40,7 @@ III. Declare your `Toolbar` inside any `layout.xml` file.
 
 ## How to style?
 
-![](images/toolbar-2.png)
+![](../images/toolbar-2.png)
 
 I. Declare custom styles in your `style.xml` file.
 
@@ -89,11 +86,9 @@ II. Apply these styles to your `Toolbar` via `style`, `tittleTextAppearance` and
 
 ## Toolbar with menu icons
 
-![](images/toolbar-3.png)
-
+![](../images/toolbar-3.png)
 
 I. Create items for every action.
-
 
 ```xml
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
@@ -131,14 +126,15 @@ II. Make your activity implement `Toolbar.OnMenuItemClickListener`.
 ```java
 public class MyActivity extends AppCompatActivity
     implements Toolbar.OnMenuItemClickListener {
+      ...
+    }
 ```
 
 III. Reference your activity which implements the listener in your toolbar.
 
-```prettyprint
+```java
 toolbar.setOnMenuItemClickListener(this);
 ```
-
 
 IV. Implement your actions inside the `onMenuItemClick` method.
 
@@ -161,7 +157,7 @@ public boolean onMenuItemClick(MenuItem item) {
 
 ## Toolbar with navigation back icon
 
-![](images/toolbar-4.png)
+![](../images/toolbar-4.png)
 
 I. Declare custom style in your `styles.xml` file.
 
@@ -176,8 +172,7 @@ I. Declare custom style in your `styles.xml` file.
 
 II. Apply this style to your `Toolbar` via style attribute.
 
-
-````xml
+```xml
 <android.support.v7.widget.Toolbar
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
@@ -201,7 +196,7 @@ toolbar.setNavigationOnClickListener(new View.OnClickListener() {
 
 ## Toolbar with blank space
 
-![](images/toolbar-5.png)
+![](../images/toolbar-5.png)
 
 I. Declare custom style in your `styles.xml` file.
 
@@ -217,8 +212,7 @@ I. Declare custom style in your `styles.xml` file.
 
 II. Apply this style to your `Toolbar` via `style` attribute.
 
-
-````xml
+```xml
 <android.support.v7.widget.Toolbar
     android:id="@+id/toolbar"
     android:layout_width="match_parent"

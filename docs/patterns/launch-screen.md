@@ -2,11 +2,10 @@
 
 <img src="/images/splash.gif" width="360"/>
 
-?> From google material design [documentation](https://material.io/guidelines/patterns/launch-screens.html).
-<br>
-<br>The launch screen is a user’s first experience of your application.
-<br>
-<br>Because launching your app while displaying a blank canvas increases its perceived loading time, consider using a placeholder UI or a branded launch screen.
+!!! note "From google material design [documentation](https://material.io/guidelines/patterns/launch-screens.html)."
+    The launch screen is a user’s first experience of your application.
+
+    Because launching your app while displaying a blank canvas increases its perceived loading time, consider using a placeholder UI or a branded launch screen.
 
 ### How to add?
 
@@ -32,7 +31,8 @@ II. Declare custom style in your `styles.xml` using the new `drawable` as backgr
     <item name="android:windowBackground">@drawable/background_splash</item>
 </style>
 ```
-?> If your API Level is greater than v19, you can make Status Bar and Navigation Bar translucent setting attributes `android:windowTranslucentStatus` and `android:windowTranslucentNavigation` to `true`.
+!!! note
+    If your API Level is greater than v19, you can make Status Bar and Navigation Bar translucent setting attributes `android:windowTranslucentStatus` and `android:windowTranslucentNavigation` to `true`.
 
 III. Apply this style to your splash activity via `android:theme` attribute in your `AndroidManifest.xml` file.
 

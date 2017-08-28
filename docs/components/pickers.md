@@ -2,13 +2,12 @@
 
 ## Date Picker
 
-<img src="images/date-picker-1.png" width="360"/>
+<img src="/images/date-picker-1.png" width="360"/>
 
-?> From the Google Material Design [documentation](https://material.io/guidelines/components/pickers.html#pickers-date-pickers)
-<br>
-<br>A dialog picker is used to select a single date on mobile_.
-<br>
-<br>The selected day is indicated by a filled circle. The current day is indicated by a different color and type weight.
+!!! note "From the Google Material Design [documentation](https://material.io/guidelines/components/pickers.html#pickers-date-pickers)"
+    A dialog picker is used to select a single date on mobile_.
+
+    The selected day is indicated by a filled circle. The current day is indicated by a different color and type weight.
 
 ### How to add?
 
@@ -44,7 +43,7 @@ datePickerDialog.show();
 
 ### How to style?
 
-<img src="images/date-picker-2.png" width="360"/>
+<img src="/images/date-picker-2.png" width="360"/>
 
 I. Declare custom `drawable.xml` for the dialog background.
 
@@ -95,11 +94,10 @@ datePickerDialog.show();
 
 <img src="/images/time-picker-1.png" width="360"/>
 
-?> From de Google Material Design [documentation](https://material.io/guidelines/components/pickers.html#pickers-time-pickers)
-<br>
-<br>A time picker adjusts to a user’s preferred time setting, i.e. the 12-hour or 24-hour format.
-<br>
-<br>A dialog picker is used to select a single time (hours:minutes) on mobile.
+!!! note "From de Google Material Design [documentation](https://material.io/guidelines/components/pickers.html#pickers-time-pickers)"
+    A time picker adjusts to a user’s preferred time setting, i.e. the 12-hour or 24-hour format.
+
+    A dialog picker is used to select a single time (hours:minutes) on mobile.
 
 ### How to add?
 
@@ -183,7 +181,7 @@ IV. Show your `TimePickerDialog` with the `show` method.
 timePickerDialog.show();
 ```
 
-### Time Picker with dark theme
+### Dark theme
 
 <img src="/images/time-picker-3.png" width="360"/>
 
@@ -195,15 +193,15 @@ TimePickerDialog dialog = new TimePickerDialog(
     listener, startingHour, startingMinute, is24HourFormat);
 ```
 
-?> You can use your custom style setting its parent with the `Theme.AppCompat.Light.Dialog.Alert` value
+!!! note
+    You can use your custom style setting its parent with the `Theme.AppCompat.Light.Dialog.Alert` value
 
-# Color Picker
+## Color Picker
 
-<img src="images/color-picker-1.png" width="480"/>
+<img src="/images/color-picker-1.png" width="480"/>
 
-?> From Google material design [documentation](https://www.google.com/design/spec/components/pickers.html)
-<br>
-<br>Pickers provide a simple way to select a single value from a pre-determined set.
+!!! note "From Google material design [documentation](https://www.google.com/design/spec/components/pickers.html)."
+    Pickers provide a simple way to select a single value from a pre-determined set.
 
 ### How to add?
 
@@ -266,7 +264,7 @@ colorPickerDialog.show(getFragmentManager(), tag);
 
 ### How to style?
 
-<img src="images/color-picker-2.png" width="480"/>
+<img src="/images/color-picker-2.png" width="480"/>
 
 I. Create a `ColorPickerPalette` in a layout file.
 
@@ -282,7 +280,8 @@ I. Create a `ColorPickerPalette` in a layout file.
     />
 ```
 
-?> The `ColorPickerPalette` extends from the `TableLayout` class, you can use the `TableLayout` view group parameters to  style it.
+!!! note
+    The `ColorPickerPalette` extends from the `TableLayout` class, you can use the `TableLayout` view group parameters to  style it.
 
 II. Declare a dark style for the dialog which will contain the `ColorPickerPalette`.
 

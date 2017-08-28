@@ -2,9 +2,8 @@
 
 <img src="/images/normal_swipe.gif" width="480"/>
 
-?>From the Google Material Design [documentation](https://material.io/guidelines/patterns/swipe-to-refresh.html#)
-<br>
-<br>Swipe to refresh manually refreshes screen content with a user action or gesture.
+!!! note "From the Google Material Design [documentation](https://material.io/guidelines/patterns/swipe-to-refresh.html#)"
+    Swipe to refresh manually refreshes screen content with a user action or gesture.
 
 ### How to add?
 I. Add the last version of the `support-v4` library to your  `build.gradle` file.

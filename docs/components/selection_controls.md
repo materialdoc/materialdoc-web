@@ -2,12 +2,14 @@
 
 ## Check Box
 
-![](images/check-box-intro-v1.png)
+![](../images/check-box-intro-v1.png)
 
-?> From google material design [documentation](https://material.io/guidelines/components/selection-controls.html#selection-controls-checkbox).
-<br><br>Checkboxes allow the user to select multiple options from a set.
-<br><br>If you have multiple options appearing in a list, you can preserve space by using checkboxes instead of on/off switches.
-<br><br>If you have a single option, avoid using a checkbox and use an on/off switch instead.
+!!! note "From google material design [documentation](https://material.io/guidelines/components/selection-controls.html#selection-controls-checkbox)."
+    Checkboxes allow the user to select multiple options from a set.
+
+    If you have multiple options appearing in a list, you can preserve space by using checkboxes instead of on/off switches.
+
+    If you have a single option, avoid using a checkbox and use an on/off switch instead.
 
 ### How to add?
 
@@ -37,7 +39,7 @@ III. Declare your `CheckBox` inside any `layout.xml` file
 
 ### How to style?
 
-![](images/check-box-style-v1.png)
+![](../images/check-box-style-v1.png)
 
 I. Declare custom style in your `styles.xml` file.
 
@@ -61,12 +63,12 @@ II. Apply this style to your `CheckBox` via `android:theme` attribute.
 
 ## Radio Button
 
-![](images/radio-button-intro-v1.png)
+![](../images/radio-button-intro-v1.png)
 
-?> From google material design [documentation](https://material.io/guidelines/components/selection-controls.html#selection-controls-radio-button).
-<br><br>Radio buttons allow the user to select one option from a set. Use radio buttons for exclusive selection if you think that the user needs to see all available options side-by-side.
-<br><br>Otherwise, consider a dropdown, which uses less space than displaying all options.
+!!! note "From google material design [documentation](https://material.io/guidelines/components/selection-controls.html#selection-controls-radio-button)."
+    Radio buttons allow the user to select one option from a set. Use radio buttons for exclusive selection if you think that the user needs to see all available options side-by-side.
 
+    Otherwise, consider a dropdown, which uses less space than displaying all options.
 
 ### How to add?
 
@@ -96,7 +98,7 @@ III. Declare your `RadioButton` inside any `layout.xml` file
 
 ### How to style?
 
-![](images/radio-button-style-v1.png)
+![](../images/radio-button-style-v1.png)
 
 I. Declare custom style in your `styles.xml` file.
 
@@ -120,12 +122,12 @@ II. Apply this style to your `RadioButton` via `android:theme` attribute.
 
 ## Switch
 
-![](images/switch-intro-v1.png)
+![](../images/switch-intro-v1.png)
 
-?> From google material design [documentation](https://material.io/guidelines/components/selection-controls.html#selection-controls-switch).
-<br><br>On/off switches toggle the state of a single settings option. The option that the switch controls, as well as the state it’s in, should be made clear from the corresponding inline label. Switches take on the same visual properties of the radio button.
-<br><br>The on/off slide toggle with the text “on” and “off” included within the asset is deprecated. Use the switch shown here instead.
+!!! note "From google material design [documentation](https://material.io/guidelines/components/selection-controls.html#selection-controls-switch)."
+    On/off switches toggle the state of a single settings option. The option that the switch controls, as well as the state it’s in, should be made clear from the corresponding inline label. Switches take on the same visual properties of the radio button.
 
+    The on/off slide toggle with the text “on” and “off” included within the asset is deprecated. Use the switch shown here instead.
 
 ### How to add?
 
@@ -152,11 +154,12 @@ III. Declare your `SwitchCompat` inside any `layout.xml` file
     android:checked="true"/>
 ```
 
-?> `android.support.v7.widget.SwitchCompat` is a backward compatible version of the Switch widget.
+!!! note
+    `android.support.v7.widget.SwitchCompat` is a backward compatible version of the Switch widget.
 
 ### How to style?
 
-![](images/switch-style-v1.png)
+![](../images/switch-style-v1.png)
 
 I. Declare custom style in your `styles.xml` file.
 
@@ -183,4 +186,5 @@ II. Apply this style to your `SwitchCompat` via `android:theme` attribute.
     android:theme="@style/MySwitch"/>
 ```
 
-!> Android automatically add 30% transparency to `colorControlActivated` and `android:colorForeground` for `SwitchCompat`.
+!!! note
+    Android automatically add 30% transparency to `colorControlActivated` and `android:colorForeground` for `SwitchCompat`.

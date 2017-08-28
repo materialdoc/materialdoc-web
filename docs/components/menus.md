@@ -1,10 +1,9 @@
 # Menus
 
-![](images/menus-1.png)
+![](../images/menus-1.png)
 
-?> From the google material design [documentation](https://material.io/guidelines/components/menus.html)
-<br>
-<br>Menus allow users to take an action by selecting from a list of choices revealed upon opening a temporary, new sheet of material.
+!!! note "From the google material design [documentation](https://material.io/guidelines/components/menus.html)"
+    Menus allow users to take an action by selecting from a list of choices revealed upon opening a temporary, new sheet of material.
 
 ### How to add?
 
@@ -56,7 +55,6 @@ III. Create a menu file inside the `res/menu` folder with some items on it.
 
 ```
 
-
 IV. Override activity `onCreateOptionsMenu` method and inflate menu resource.
 
 ```java
@@ -67,11 +65,9 @@ public boolean onCreateOptionsMenu(Menu menu) {
 }
 ```
 
-
-
 ### How to style?
 
-![](images/menus-2.png)
+![](../images/menus-2.png)
 
 I. Declare a custom style extending the `ThemeOverlay.AppCompat.Dark` theme in your `style.xml` file.
 
