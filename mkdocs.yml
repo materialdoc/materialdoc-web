@@ -1,0 +1,64 @@
+# Project information
+site_name: Materialdoc
+site_description: 'Material Components for Android'
+site_author: 'Dmytro Danylyk'
+site_url: 'https://materialdoc.com'
+
+# Repository
+repo_name: 'GitHub'
+repo_url: 'https://github.com/materialdoc/materialdoc-web'
+
+# Documentation and theme
+theme_dir: 'material'
+site_favicon: 'images/favicon.ico'
+
+# Options
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/materialdoc'
+    - type: 'twitter'
+      link: 'https://twitter.com/dmytrodanylyk'
+    - type: 'linkedin'
+      link: 'https://linkedin.com/in/dmytrodanylyk'
+  feature:
+    tabs: true
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - meta
+  - codehilite(guess_lang=false)
+  - toc(permalink=true)
+
+# Google Analytics
+google_analytics:
+  - 'UA-XXXXXXXX-X'
+  - 'auto'
+
+pages:
+    - Home: index.md
+    - Components:
+      - Buttons: components/buttons.md
+      - Buttons Floating Action Button: components/fab.md
+      - Bottom navigation: components/bottom-navigation.md
+      - Bottom sheets: components/bottom-sheets.md
+      - Cards: components/cards.md
+      - Dialogs: not_found.md
+      - Menus: components/menus.md
+      - Pickers: components/pickers.md
+      - Progress: components/progress.md
+      - Rating Bar: components/rating-bar.md
+      - Selection controls: components/selection_controls.md
+      - Snackbars & Toasts: components/snackbars-and-toasts.md
+      - Tabs: not_found.md
+      - Text fields: components/text-fields.md
+      - Toolbars: components/toolbars.md
+    - Patterns:
+      - Launch screens: patterns/launch-screen.md
+      - Navigation drawer: not_found.md
+      - Notifications: not_found.md
+      - Scrolling techniques: not_found.md
+      - Swipe to refresh: patterns/swipe-to-refresh.md
+    - Application: application.md
+    - Feedback: feedback.md

@@ -1,16 +1,13 @@
-language: node_js
-node_js:
-  - "4.5"
-
-branches:
-  only:
-    - master
-
+language: python
+python:
+- '2.7'
+install: pip install -q -r requirements.txt
 script:
-  - echo "Deploying!"
-
-install:
-  - npm install -g firebase-tools
-
-after_success:
-  - firebase deploy --token $FIREBASE_API_TOKEN
+  - mkdocs build
+  - ls
+deploy:
+  skip_cleanup: true
+  provider: firebase
+  token:
+    secure: $FIREBASE_API_TOKEN
+  project: "materialdoc-mkdocs"

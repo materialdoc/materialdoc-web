@@ -1,55 +1,8 @@
 {
   "hosting": {
-    "public": "content",
+    "public": "site",
     "ignore": [
       "firebase.json"
-    ],
-    "redirects": [
-      {
-        "source": "/faq",
-        "destination": "/#/",
-        "type" : 301
-      },
-      {
-        "source": "/components",
-        "destination": "/#/",
-        "type" : 301
-      },
-      {
-        "source": "/patterns",
-        "destination": "/#/",
-        "type" : 301
-      },
-      {
-        "source": "/android-application",
-        "destination": "/#/application",
-        "type" : 301
-      },
-      {
-        "source": "/progress",
-        "destination": "/#/progress",
-        "type" : 301
-      },
-      {
-        "source": "/rating-bar",
-        "destination": "/#/rating-bar",
-        "type" : 301
-      },
-      {
-        "source": "/snackbars-and-toasts",
-        "destination": "/#/snackbars-and-toasts",
-        "type" : 301
-      },
-      {
-        "source": "/buttons",
-        "destination": "/#/buttons",
-        "type" : 301
-      },
-      {
-        "source" : "/bottom-navigation",
-        "destination" : "/#/bottom-navigation",
-        "type" : 301
-      }
     ]
   }
 }

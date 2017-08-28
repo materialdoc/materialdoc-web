@@ -1,3 +1,0 @@
-- [Home](README.md)
-- [Application](application.md)
-- [Feedback](feedback.md)
