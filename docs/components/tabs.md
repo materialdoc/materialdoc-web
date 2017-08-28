@@ -2,7 +2,8 @@
 
 ![Tabs Default](../images/tabs_default.png)
     
-    From google material design [documentation](https://www.google.com/design/spec/components/tabs.html) Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets.
+!!! note "From google material design [documentation](https://www.google.com/design/spec/components/tabs.html)"
+    Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets.
 
 
 ### How to add?
