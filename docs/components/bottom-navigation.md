@@ -2,7 +2,7 @@
 
 ![](../images/bottom-navigation-1.png)
 
-!!! note "From google material design [documentation](https://material.io/guidelines/components/bottom-navigation.html)."
+!!! quote "From google material design [documentation](https://material.io/guidelines/components/bottom-navigation.html)."
     Bottom navigation bars make it easy to explore and switch between top-level views in a single tap.
 
 ### How to add?

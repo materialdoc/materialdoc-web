@@ -2,7 +2,7 @@
 
 <img src="/images/splash.gif" width="360"/>
 
-!!! note "From google material design [documentation](https://material.io/guidelines/patterns/launch-screens.html)."
+!!! quote "From google material design [documentation](https://material.io/guidelines/patterns/launch-screens.html)."
     The launch screen is a user’s first experience of your application.
 
     Because launching your app while displaying a blank canvas increases its perceived loading time, consider using a placeholder UI or a branded launch screen.

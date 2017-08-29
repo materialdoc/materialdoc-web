@@ -4,7 +4,7 @@
 
 ![](../images/snack-bar-1.png)
 
-!!! note "From google material design [documentation](https://material.io/guidelines/components/snackbars-toasts.html)."
+!!! quote "From google material design [documentation](https://material.io/guidelines/components/snackbars-toasts.html)."
     Snackbars provide lightweight feedback about an operation by showing a brief message at the bottom of the screen. Snackbars can contain an action.
 
 ### How to add?
@@ -337,7 +337,7 @@ customSnackbar.show();
 
 ![](../images/toast-1.png)
 
-!!! note "From google material design [documentation](https://material.io/guidelines/components/snackbars-toasts.html)."
+!!! quote "From google material design [documentation](https://material.io/guidelines/components/snackbars-toasts.html)."
     Android also provides a toast, primarily used for system messaging. Toasts are similar to snackbars but do not contain actions and cannot be swiped off screen.
 
 ### How to add?

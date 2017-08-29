@@ -2,7 +2,7 @@
 
 <img src="/images/expand.gif" width="480"/>
 
-!!! note "From google material design [documentation](https://material.io/guidelines/components/bottom-sheets.html)."
+!!! quote "From google material design [documentation](https://material.io/guidelines/components/bottom-sheets.html)."
     A bottom sheet is a sheet of material that slides up from the bottom edge of the screen.
 
     Bottom sheets are displayed only as a result of a user-initiated action, and can be swiped up to reveal additional content. A bottom sheet can be a temporary modal surface or a persistent structural element of an app.

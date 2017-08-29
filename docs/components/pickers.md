@@ -4,7 +4,7 @@
 
 <img src="/images/date-picker-1.png" width="360"/>
 
-!!! note "From the Google Material Design [documentation](https://material.io/guidelines/components/pickers.html#pickers-date-pickers)"
+!!! quote "From the Google Material Design [documentation](https://material.io/guidelines/components/pickers.html#pickers-date-pickers)"
     A dialog picker is used to select a single date on mobile_.
 
     The selected day is indicated by a filled circle. The current day is indicated by a different color and type weight.

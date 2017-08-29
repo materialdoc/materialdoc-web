@@ -2,7 +2,7 @@
 
 ![](../images/menus-1.png)
 
-!!! note "From the google material design [documentation](https://material.io/guidelines/components/menus.html)"
+!!! quote "From the google material design [documentation](https://material.io/guidelines/components/menus.html)"
     Menus allow users to take an action by selecting from a list of choices revealed upon opening a temporary, new sheet of material.
 
 ### How to add?

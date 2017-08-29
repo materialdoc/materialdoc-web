@@ -4,7 +4,7 @@
 
 ![](../images/check-box-intro-v1.png)
 
-!!! note "From google material design [documentation](https://material.io/guidelines/components/selection-controls.html#selection-controls-checkbox)."
+!!! quote "From google material design [documentation](https://material.io/guidelines/components/selection-controls.html#selection-controls-checkbox)."
     Checkboxes allow the user to select multiple options from a set.
 
     If you have multiple options appearing in a list, you can preserve space by using checkboxes instead of on/off switches.

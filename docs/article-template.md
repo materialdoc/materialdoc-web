@@ -2,9 +2,8 @@
 
 ![](/images/placeholder.png)
 
-?> From the Google material design [documentation](/https://material.io/guidelines/)
-<br>
-<br>Always in the beginning of your article, you have to mention the section in the material design spec which talks about the component, pattern or animation that you talking about.
+!!! quote "From the Google material design [documentation](/https://material.io/guidelines/)"
+    Always in the beginning of your article, you have to mention the section in the material design spec which talks about the component, pattern or animation that you talking about.
 
 ### How to add/implement ?
 
@@ -24,7 +23,8 @@ III. Use the three ` symbol with the name of the language in order to highlight 
 // block of code
 ```
 
-?> This is a small note, informing that this step could be realized in a different way, or just an important note regarding the last step
+!!! note
+    This is a small note, informing that this step could be realized in a different way, or just an important note regarding the last step
 
 
 ### Compatibility issues
