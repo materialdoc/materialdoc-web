@@ -1,10 +1,10 @@
-# Progress
+# Progress & activity
 
 ## Circular
 
 ![](../images/circular-progress-1.gif)
 
-!!! note "From google material design [documentation](https://material.io/guidelines/components/progress-activity.html#)."
+!!! quote "From google material design [documentation](https://material.io/guidelines/components/progress-activity.html#)."
     Minimize visual changes that occur while your app loads content by representing each operation with a single activity indicator.
 
     For example, a refresh operation should display either a refresh bar or an activity circle, but not both.

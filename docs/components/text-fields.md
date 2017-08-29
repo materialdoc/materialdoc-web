@@ -2,7 +2,7 @@
 
 ![](../images/text-field-intro-v1.png)
 
-!!! note "From google material design [documentation](https://material.io/guidelines/components/text-fields.html)."
+!!! quote "From google material design [documentation](https://material.io/guidelines/components/text-fields.html)."
     Text fields allow the user to input text, select text (cut, copy, paste), and lookup data via auto-completion.
 
 ### How to add?

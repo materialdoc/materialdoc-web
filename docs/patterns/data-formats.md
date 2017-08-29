@@ -4,7 +4,7 @@
 
 ![](../images/fecha_tiempo.png)
 
-!!! note "[From the Google material design documentation](https://material.io/guidelines/patterns/data-formats.html#)"
+!!! quote "[From the Google material design documentation](https://material.io/guidelines/patterns/data-formats.html#)"
     How you format the date and time depends on a few factors:
 
     * If the time or date is the current one

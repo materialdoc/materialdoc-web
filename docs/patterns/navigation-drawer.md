@@ -1,6 +1,6 @@
 <img src=/images/nav-drawer-clean.png width="360" />
 
-!!! note "From Google material design [documentation](https://material.io/guidelines/patterns/navigation-drawer.html) and [android training](http://developer.android.com/intl/es/training/implementing-navigation/nav-drawer.html)."
+!!! quote "From Google material design [documentation](https://material.io/guidelines/patterns/navigation-drawer.html) and [android training](http://developer.android.com/intl/es/training/implementing-navigation/nav-drawer.html)."
 
     The navigation drawer slides in from the left. It is a common pattern found in Google apps and follows the keylines and metrics for lists.
 

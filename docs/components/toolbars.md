@@ -2,7 +2,7 @@
 
 ![](../images/toolbar-1.png)
 
-!!! note "From the google material design [documentation](https://material.io/guidelines/components/toolbars.html#)"
+!!! quote "From the google material design [documentation](https://material.io/guidelines/components/toolbars.html#)"
     Toolbars appear a step above the sheet of paper affected by their actions. When sheets scroll underneath toolbars, they are clipped and cannot pass through to the opposite side.
 
 ## How to add?

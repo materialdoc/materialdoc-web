@@ -67,7 +67,7 @@ II. Apply this style to your `Button` via `android:theme` attribute.
 
 ![](../images/flat-button-intro-v2.png)
 
-!!! note "From google material design [documentation](https://material.io/guidelines/components/buttons.html#buttons-flat-buttons).
+!!! quote "From google material design [documentation](https://material.io/guidelines/components/buttons.html#buttons-flat-buttons)."
     A button made of ink that displays ink reactions on press but does not lift.
 
 ### How to add?

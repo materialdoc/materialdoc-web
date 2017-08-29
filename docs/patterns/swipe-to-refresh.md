@@ -2,7 +2,7 @@
 
 <img src="/images/normal_swipe.gif" width="480"/>
 
-!!! note "From the Google Material Design [documentation](https://material.io/guidelines/patterns/swipe-to-refresh.html#)"
+!!! quote "From the Google Material Design [documentation](https://material.io/guidelines/patterns/swipe-to-refresh.html#)"
     Swipe to refresh manually refreshes screen content with a user action or gesture.
 
 ### How to add?
