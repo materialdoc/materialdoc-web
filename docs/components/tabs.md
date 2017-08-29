@@ -2,8 +2,10 @@
 
 ![Tabs Default](../images/tabs_default.png)
     
-!!! note "From google material design [documentation](https://www.google.com/design/spec/components/tabs.html)"
-    Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets.
+!!! quote "From google material design [documentation](https://material.io/guidelines/components/tabs.html)"
+    Tabs make it easy to explore and switch between different views.
+
+    Tabs enable content organization at a high level, such as switching between views, data sets, or functional aspects of an app.
 
 
 ### How to add?
@@ -16,9 +18,6 @@ dependencies {
     compile 'com.android.support:design:X.X.X'
     compile 'com.android.support:support-v13:X.X.X'
     // where X.X.X version
-
-    // if you want to support android sdk < 13
-    // you need to add support library v4 instead of v13
 }
 ```
 
