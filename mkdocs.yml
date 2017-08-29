@@ -60,7 +60,7 @@ pages:
     - Patterns:
       - Data formats: patterns/data-formats.md
       - Launch screens: patterns/launch-screen.md
-      - Navigation drawer: not_found.md
+      - Navigation drawer: patterns/navigation-drawer.md
       - Notifications: not_found.md
       - Scrolling techniques: not_found.md
       - Swipe to refresh: patterns/swipe-to-refresh.md
