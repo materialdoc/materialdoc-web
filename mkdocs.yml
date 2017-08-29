@@ -58,6 +58,7 @@ pages:
       - Text fields: components/text-fields.md
       - Toolbars: components/toolbars.md
     - Patterns:
+      - Data formats: patterns/data-formats.md
       - Launch screens: patterns/launch-screen.md
       - Navigation drawer: not_found.md
       - Notifications: not_found.md
