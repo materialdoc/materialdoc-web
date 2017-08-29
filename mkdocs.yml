@@ -40,7 +40,10 @@ google_analytics:
   - 'auto'
 
 pages:
-    - Home: index.md
+    - Home:
+      - About: index.md
+      - Application: application.md
+      - Contribute: how-to-contribute.md
     - Components:
       - Buttons: components/buttons.md
       - Buttons FAB: components/fab.md
@@ -64,5 +67,3 @@ pages:
       - Notifications: not_found.md
       - Scrolling techniques: not_found.md
       - Swipe to refresh: patterns/swipe-to-refresh.md
-    - Application: application.md
-    - Feedback: feedback.md

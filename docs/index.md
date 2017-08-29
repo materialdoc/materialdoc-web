@@ -14,13 +14,6 @@ Later we will prepare tutorials of how to make widgets which are not available i
 
 * `design library` - provides various material design components which are not part of Android SDK.
 
-### What version of support and design library are you targeting?
-
-```
-com.android.support:appcompat-v7:23.1.0
-com.android.support:design:23.1.0
-```
-
 ### Who are the authors?
 
 * [Dmytro Danylyk](http://www.dmytrodanylyk.com/)
@@ -36,8 +29,8 @@ com.android.support:design:23.1.0
 * [Paresh Mayani](http://www.technotalkative.com/)
 * [Gonzalo Toledano](http://gnzlt.com)
 
-### Want to contribute?
+### Want to help?
 
-Just send pull request to [github.com/materialdoc](https://github.com/materialdoc/materialdoc-web) `master` branch.
-
-Also make sure you have read [how to contribute](/how_to_contribute) section.
+* Share this website to social media
+* Open [github.com/materialdoc](https://github.com/materialdoc/materialdoc-web) and give us some `star`
+* Write or edit article and send pull request to  [github.com/materialdoc](https://github.com/materialdoc/materialdoc-web) `master` branch. *(Make sure you have read [how to contribute](/how-to-contribute) section)*
