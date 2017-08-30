@@ -55,9 +55,9 @@ pages:
       - Pickers: components/pickers.md
       - Progress & activity: components/progress.md
       - Rating Bar: components/rating-bar.md
-      - Selection controls: components/selection_controls.md
+      - Selection controls: components/selection-controls.md
       - Snackbars & Toasts: components/snackbars-and-toasts.md
-      - Tabs: not_found.md
+      - Tabs: components/tabs.md
       - Text fields: components/text-fields.md
       - Toolbars: components/toolbars.md
     - Patterns:
@@ -67,3 +67,5 @@ pages:
       - Notifications: not_found.md
       - Scrolling techniques: not_found.md
       - Swipe to refresh: patterns/swipe-to-refresh.md
+    # Pages which are not visible from menu
+    - 'article-template.md'
