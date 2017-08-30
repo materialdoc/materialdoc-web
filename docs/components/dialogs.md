@@ -110,7 +110,7 @@ dialog.show();
 
 ![](../images/dialog_confirmation_small.png)
 
-!!! quote "From Google material design [documentation](http://www.google.com.ua/design/spec/components/dialogs.html#dialogs-confirmation-dialogs)"
+!!! quote "From Google material design [documentation](https://material.io/guidelines/components/dialogs.html#dialogs-confirmation-dialogs)"
     Confirmation dialogs require users to explicitly confirm their choice before an option is committed. For example, users can listen to multiple ringtones but only make a final selection upon touching “OK.”
     Tapping “Cancel” in a confirmation dialog, or pressing “Back,” cancels the action, discards any changes, and closes the dialog.
 
