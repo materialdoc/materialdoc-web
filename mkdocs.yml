@@ -50,7 +50,7 @@ pages:
       - Bottom navigation: components/bottom-navigation.md
       - Bottom sheets: components/bottom-sheets.md
       - Cards: components/cards.md
-      - Dialogs: not_found.md
+      - Dialogs: components/dialogs.md
       - Menus: components/menus.md
       - Pickers: components/pickers.md
       - Progress & activity: components/progress.md

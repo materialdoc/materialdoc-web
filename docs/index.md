@@ -8,7 +8,7 @@ We want to describe how to use and style material components with google appcomp
 
 Later we will prepare tutorials of how to make widgets which are not available in google material spec/links to open source libraries.
 
-### What is different between appcompat and design library?
+### What is different between app compat and design library?
 
 * `v7 appcompat library` - provide support of material design user interface implementations  for older Android platforms.
 
