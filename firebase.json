@@ -5,13 +5,6 @@
       "firebase.json"
     ],
 
-    "rewrites": [
-        {
-          "source": "abs",
-          "destination": "/components/buttons.html"
-        }
-    ],
-
     "redirects": [
         {
           "source" : "/components/",
@@ -62,8 +55,192 @@
           "source" : "/color-picker/",
           "destination" : "/components/pickers/#color-picker",
           "type" : 301
+        },
+        {
+          "source" : "/autocomplete-view/",
+          "destination" : "/",
+          "type" : 301
+        },
+        {
+          "source" : "/check-box/",
+          "destination" : "/components/selection-controls/#check-box",
+          "type" : 301
+        },
+        {
+          "source" : "/radio-button/",
+          "destination" : "/components/selection-controls/#radio-button",
+          "type" : 301
+        },
+        {
+          "source" : "/bottom-navigation/",
+          "destination" : "/components/bottom-navigation/",
+          "type" : 301
+        },
+        {
+          "source" : "/tabs/",
+          "destination" : "/components/tabs/",
+          "type" : 301
+        },
+        {
+          "source" : "/cardview/",
+          "destination" : "/components/cards/",
+          "type" : 301
+        },
+        {
+          "source" : "/date-picker/",
+          "destination" : "/components/pickers/#date-picker",
+          "type" : 301
+        },
+        {
+          "source" : "/bottom-sheets/",
+          "destination" : "/components/bottom-sheets/",
+          "type" : 301
+        },
+        {
+          "source" : "/user-input-errors/",
+          "destination" : "/components/text-fields/#user-input-errors",
+          "type" : 301
+        },
+        {
+          "source" : "/splash-screens/",
+          "destination" : "/patterns/launch-screen/",
+          "type" : 301
+        },
+        {
+          "source" : "/big-style-notifications/",
+          "destination" : "/",
+          "type" : 301
+        },
+        {
+          "source" : "/snackbar/",
+          "destination" : "/components/snackbars-and-toasts/#snack-bar",
+          "type" : 301
+        },
+        {
+          "source" : "/page/2/",
+          "destination" : "/",
+          "type" : 301
+        },
+        {
+          "source" : "/scrolling-techniques/",
+          "destination" : "",
+          "type" : 301
+        },
+        {
+          "source" : "/floating-action-button/",
+          "destination" : "/components/fab/",
+          "type" : 301
+        },
+        {
+          "source" : "/navigation-drawer/",
+          "destination" : "/",
+          "type" : 301
+        },
+        {
+          "source" : "/patterns/",
+          "destination" : "/patterns/data-formats/",
+          "type" : 301
+        },
+        {
+          "source" : "/floating-label/",
+          "destination" : "/components/text-fields/#floating-labels",
+          "type" : 301
+        },
+        {
+          "source" : "/page/3/",
+          "destination" : "/",
+          "type" : 301
+        },
+        {
+          "source" : "/toolbars/",
+          "destination" : "/components/toolbars/",
+          "type" : 301
+        },
+        {
+          "source" : "/character-counter/",
+          "destination" : "/components/text-fields/#character-counter",
+          "type" : 301
+        },
+        {
+          "source" : "/confirmation-dialog/",
+          "destination" : "/components/dialogs/#confirmation-dialogs",
+          "type" : 301
+        },
+        {
+          "source" : "/page/4/",
+          "destination" : "/",
+          "type" : 301
+        },
+        {
+          "source" : "/time-pickers/",
+          "destination" : "/components/pickers/#time-picker",
+          "type" : 301
+        },
+        {
+          "source" : "/steppers-libraries/",
+          "destination" : "/",
+          "type" : 301
+        },
+        {
+          "source" : "/page/5/",
+          "destination" : "/",
+          "type" : 301
+        },
+        {
+          "source" : "/toast/",
+          "destination" : "/components/snackbars-and-toasts/#toast",
+          "type" : 301
+        },
+        {
+          "source" : "/android-application/",
+          "destination" : "/application/",
+          "type" : 301
+        },
+        {
+          "source" : "/page/6/",
+          "destination" : "/",
+          "type" : 301
+        },
+        {
+          "source" : "/menus/",
+          "destination" : "/components/menus/",
+          "type" : 301
+        },
+        {
+          "source" : "/swipe-to-refresh/",
+          "destination" : "/patterns/swipe-to-refresh/",
+          "type" : 301
+        },
+        {
+          "source" : "/page/7/",
+          "destination" : "/",
+          "type" : 301
+        },
+        {
+          "source" : "/page/8/",
+          "destination" : "/",
+          "type" : 301
+        },
+        {
+          "source" : "/data-redaction-and-truncation/",
+          "destination" : "/patterns/data-formats/#data-redaction-and-truncation",
+          "type" : 301
+        },
+        {
+          "source" : "/date/",
+          "destination" : "/patterns/data-formats/",
+          "type" : 301
+        },
+        {
+          "source" : "/notifications/",
+          "destination" : "/",
+          "type" : 301
+        },
+        {
+          "source" : "/page/9/",
+          "destination" : "/",
+          "type" : 301
         }
-        
     ]
   }
 }
