@@ -1,8 +1,15 @@
 {
   "hosting": {
-    "public": "docs",
+    "public": "site",
     "ignore": [
       "firebase.json"
+    ],
+
+    "rewrites": [
+        {
+          "source": "abs",
+          "destination": "/components/buttons"
+        }
     ],
 
     "redirects": [
