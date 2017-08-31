@@ -8,7 +8,7 @@
     "rewrites": [
         {
           "source": "abs",
-          "destination": "/components/buttons"
+          "destination": "/components/buttons.html"
         }
     ],
 
