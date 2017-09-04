@@ -58,7 +58,7 @@
         },
         {
           "source" : "/autocomplete-view/",
-          "destination" : "/",
+          "destination" : "/components/autocomplete",
           "type" : 301
         },
         {
@@ -108,7 +108,7 @@
         },
         {
           "source" : "/big-style-notifications/",
-          "destination" : "/",
+          "destination" : "/patterns/notifications/",
           "type" : 301
         },
         {
@@ -133,7 +133,7 @@
         },
         {
           "source" : "/navigation-drawer/",
-          "destination" : "/",
+          "destination" : "/patterns/navigation-drawer/",
           "type" : 301
         },
         {
@@ -233,7 +233,7 @@
         },
         {
           "source" : "/notifications/",
-          "destination" : "/",
+          "destination" : "/patterns/notifications/",
           "type" : 301
         },
         {

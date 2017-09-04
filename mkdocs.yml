@@ -45,6 +45,7 @@ pages:
       - Application: application.md
       - Contribute: how-to-contribute.md
     - Components:
+      - Auto-complete: components/autocomplete.md
       - Buttons: components/buttons.md
       - Buttons FAB: components/fab.md
       - Bottom navigation: components/bottom-navigation.md
@@ -64,7 +65,7 @@ pages:
       - Data formats: patterns/data-formats.md
       - Launch screens: patterns/launch-screen.md
       - Navigation drawer: patterns/navigation-drawer.md
-      - Notifications: not_found.md
+      - Notifications: patterns/notifications.md
       - Scrolling techniques: not_found.md
       - Swipe to refresh: patterns/swipe-to-refresh.md
     # Pages which are not visible from menu
