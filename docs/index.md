@@ -17,7 +17,7 @@ Later we will prepare tutorials of how to make widgets which are not available i
 ### Who are the authors?
 
 * [Dmytro Danylyk](http://www.dmytrodanylyk.com/)
-* [Yakiv Mosman](http://www.yakivmospan.com/)
+* [Yakiv Mospan](http://www.yakivmospan.com/)
 * [Saúl Molinero](http://saulmm.github.io/)
 * [Roman Danylyk](https://github.com/romandanylyk)
 * Volodymyr Yatsykiv
