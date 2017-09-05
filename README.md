@@ -37,5 +37,5 @@ Later we will prepare tutorials of how to make widgets which are not available i
 
 * Share this website to social media
 * Star our repository [github.com/materialdoc](https://github.com/materialdoc/materialdoc-web)
-* Write or edit article and send pull request to `master` branch. *(Make sure you have read [how to contribute](/how-to-contribute) section)*
+* Write or edit article and send pull request to `master` branch. *(Make sure you have read [how to contribute](docs/how-to-contribute.md) section)*
 
