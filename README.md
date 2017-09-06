@@ -2,7 +2,7 @@
 
 [https://materialdoc.com](https://materialdoc.com)
 
-<img src="images/screenshot.png"/>
+<img src="docs/images/screenshot.png"/>
 
 ### What is this site about?
 
