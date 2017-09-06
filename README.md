@@ -1,8 +1,8 @@
+![](docs/images/screenshot.png)
+
 # Material Design - The development documentation
 
 [https://materialdoc.com](https://materialdoc.com)
-
-<img src="docs/images/screenshot.png"/>
 
 ### What is this site about?
 
