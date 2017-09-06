@@ -2,6 +2,8 @@
 
 [https://materialdoc.com](https://materialdoc.com)
 
+<img src="images/screenshot.png"/>
+
 ### What is this site about?
 
 We feel there's a huge disconnect between [google material design guidelines](http://www.google.com/design/spec/material-design/introduction.html) and developers docs. After collecting feedback on [Google+](https://plus.google.com/+DmytroDanylyk/posts/MJYpZq666KA) and [Reddit](https://www.reddit.com/r/androiddev/comments/3qm8pk/do_you_think_material_design_spec_is_not_enough/) we decided to make a site with a single list of available material components and samples of their usage.
@@ -38,4 +40,3 @@ Later we will prepare tutorials of how to make widgets which are not available i
 * Share this website to social media
 * Star our repository [github.com/materialdoc](https://github.com/materialdoc/materialdoc-web)
 * Write or edit article and send pull request to `master` branch. *(Make sure you have read [how to contribute](docs/how-to-contribute.md) section)*
-
