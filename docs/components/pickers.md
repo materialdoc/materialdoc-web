@@ -94,7 +94,7 @@ datePickerDialog.show();
 
 <img src="/images/time-picker-1.png" width="360"/>
 
-!!! note "From de Google Material Design [documentation](https://material.io/guidelines/components/pickers.html#pickers-time-pickers)"
+!!! note "From the Google Material Design [documentation](https://material.io/guidelines/components/pickers.html#pickers-time-pickers)"
     A time picker adjusts to a user’s preferred time setting, i.e. the 12-hour or 24-hour format.
 
     A dialog picker is used to select a single time (hours:minutes) on mobile.
