@@ -58,13 +58,13 @@ II. Apply this style to your `EditText` via `android:theme` attribute.
 !!! note "From google material design [documentation](https://material.io/guidelines/components/text-fields.html)."
     Single-line fields automatically scroll their content to the left as the text input cursor reaches the right edge of the input field.
 
-To make your `EditText` single line add `android:singleLine` attribute and set it's value to `true`.
+To make your `EditText` single line add `android:inputType` attribute and set it's value to `text`.
 
 ```xml
 <EditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:singleLine="true"
+    android:inputType="text"
     android:hint="Hint text"/>
 ```
 
