@@ -150,7 +150,7 @@ III. Declare your `EditText` inside any `layout.xml` file and wrap it with `Text
 ```
 
 !!! note
-    Both widgets `TextInputLayout` and `EditText` have `android:hint` attribute, you can use any of them.
+    Both widgets `TextInputLayout` and `EditText` have `android:hint` attribute, you can use any of them. If your app supports landscape mode, replace `EditText` with `TextInputEditText` in order for the hint to display correctly.
 
 ### How to style?
 
