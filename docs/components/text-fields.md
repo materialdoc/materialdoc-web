@@ -285,22 +285,30 @@ II. Apply this styles to your `TextInputLayout` via `app:errorTextAppearance` at
     Use a character counter in fields where a character restriction is in place.
 
 ### How to add?
-I. Add the last version of the `appcompat` library to your  `build.gradle` file.
+I. In your `build.gradle` add latest `appcompat` and `design` libraries.
 ```
 dependencies {  
-    compile 'com.android.support:appcompat-v7:X.X.X'
-    // where X.X.X is the last version available
+    compile 'com.android.support:appcompat-v7:X.X.X' // where X.X.X version
+    compile 'com.android.support:design:X.X.X' // where X.X.X version
 }
 ```
 
-II. Declare your `EditText` inside any `layout.xml` file and wrap it with `TextInputLayout`. Add `app:counterEnabled` attribute and set it value to `true`. To restrict maximum characters count set some integer value to `app:counterMaxLength` attribute.
+II. Make your activity extend `android.support.v7.app.AppCompatActivity`.
+
+```java
+public class MainActivity extends AppCompatActivity {
+    ...
+}
+```
+
+III. Declare your `EditText` inside any `layout.xml` file and wrap it with `TextInputLayout`. Add `app:counterEnabled` attribute and set its value to `true`. To restrict maximum characters count set some integer value to `app:counterMaxLength` attribute.
 ```xml
 <android.support.design.widget.TextInputLayout
         android:id="@+id/inputLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:counterEnabled="true"
-        app:counterMaxLength="140" >
+        app:counterMaxLength="140">
 
     <EditText
         android:layout_width="match_parent"
@@ -327,3 +335,94 @@ II. Apply this styles to your `TextInputLayout` via `app:counterOverflowTextAppe
 ```xml
 app:counterOverflowTextAppearance="@style/MyOverflowText"
 ```
+
+## Password toggle
+
+![](../images/password_toggle.gif)
+
+!!! note "From google material design [documentation](https://material.io/guidelines/components/text-fields.html)."
+    When the visibility icon is displayed with a text field, it indicates whether or not that field’s input is visible. A text field’s visibility may be toggled on or off using the icon.
+
+### How to add?
+
+I. In your `build.gradle` add latest `appcompat` and `design` libraries.
+
+```
+dependencies {
+    compile 'com.android.support:appcompat-v7:X.X.X' // where X.X.X version
+    compile 'com.android.support:design:X.X.X' // where X.X.X version
+}
+```
+
+II. Make your activity extend `android.support.v7.app.AppCompatActivity`.
+
+```java
+public class MainActivity extends AppCompatActivity {
+    ...
+}
+```
+
+III. Declare your `EditText` inside any `layout.xml` file and wrat it with `TextInputLayout`. Add `app:passwordToggleEnabled` and set its value to `true`.
+```xml
+<android.support.design.widget.TextInputLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password" />
+
+</android.support.design.widget.TextInputLayout>
+```
+
+!!! note
+    Declare `app:passwordToggleContentDescription` attribute inside `TextInputLayout` for accessibility purposes.
+
+### How to style?
+
+![](../images/password_toggle_color.png)
+
+To change the color of the password toggle icon, use the `app:passwordToggleTint` attribute:
+```xml
+<android.support.design.widget.TextInputLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorAccent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password" />
+
+</android.support.design.widget.TextInputLayout>
+```
+
+Moreover, you can specify the blending mode with the `app:passwordToggleTintMode` attribute.
+
+### Icon
+
+![](../images/password_toggle_icon.png)
+
+To change the password toggle icon, use the `app:passwordToggleDrawable` attribute:
+```xml
+<android.support.design.widget.TextInputLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleDrawable="@drawable/ic_lock">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password" />
+
+</android.support.design.widget.TextInputLayout>
+```
+
+Use a [StateListDrawable](https://developer.android.com/reference/android/graphics/drawable/StateListDrawable.html) with the `android:state_checked` attribute to use separate drawables for each toggle state. Moreover, choose an [AnimatedStateListDrawable](https://developer.android.com/reference/android/graphics/drawable/AnimatedStateListDrawable.html) to animate the drawables between states.
