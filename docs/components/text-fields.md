@@ -362,7 +362,7 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 
-III. Declare your `EditText` inside any `layout.xml` file and wrat it with `TextInputLayout`. Add `app:passwordToggleEnabled` and set its value to `true`.
+III. Declare your `EditText` inside any `layout.xml` file and wrap it with `TextInputLayout`. Add `app:passwordToggleEnabled` and set its value to `true`.
 ```xml
 <android.support.design.widget.TextInputLayout
         android:id="@+id/inputLayout"
