@@ -373,6 +373,7 @@ III. Declare your `EditText` inside any `layout.xml` file and wrap it with `Text
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="textPassword"
         android:hint="Password" />
 
 </android.support.design.widget.TextInputLayout>
