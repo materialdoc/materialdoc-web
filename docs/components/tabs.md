@@ -59,7 +59,7 @@ IV. Setup your `TabLayout` with `ViewPager`.
 ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
 
 //set adapter to your ViewPager
-viewPager.setAdapter(new TabPagerAdapter(getFragmentManager()));
+viewPager.setAdapter(new FragmentPagerAdapter(getFragmentManager()));
 
 TabLayout tabLayout = (TabLayout) findViewById(R.id.tabLayout);
 tabLayout.setupWithViewPager(viewPager);
