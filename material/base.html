@@ -59,6 +59,13 @@
       <link rel="stylesheet" href="{{ path }}">
     {% endfor %}
     {% block extrahead %}{% endblock %}
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-7916751828489555",
+        enable_page_level_ads: true
+      });
+    </script>
   </head>
   {% set palette = config.extra.get("palette", {}) %}
   {% set primary = palette.primary | replace(" ", "-") | lower %}
