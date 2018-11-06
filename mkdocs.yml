@@ -32,7 +32,8 @@ markdown_extensions:
   - admonition
   - meta
   - codehilite
-  - toc(permalink=true)
+  - toc:
+        permalink: true
 
 # Google Analytics
 google_analytics:
