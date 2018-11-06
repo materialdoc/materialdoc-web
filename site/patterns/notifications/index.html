@@ -1,0 +1,1290 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Material Components for Android">
+      
+      
+        <link rel="canonical" href="https://materialdoc.com/patterns/notifications/">
+      
+      
+        <meta name="author" content="Dmytro Danylyk">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
+    
+    
+      
+        <title>Notifications - Materialdoc</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-7916751828489555",
+        enable_page_level_ads: true
+      });
+    </script>
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#notifications-with-text" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://materialdoc.com" title="Materialdoc" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Materialdoc
+              </span>
+              <span class="md-header-nav__topic">
+                Notifications
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/materialdoc/materialdoc-web/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://materialdoc.com" title="Materialdoc" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Materialdoc
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/materialdoc/materialdoc-web/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      Home
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Home
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../application/" title="Application" class="md-nav__link">
+      Application
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../how-to-contribute/" title="Contribute" class="md-nav__link">
+      Contribute
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Components
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Components
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../components/autocomplete/" title="Auto-complete" class="md-nav__link">
+      Auto-complete
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../components/buttons/" title="Buttons" class="md-nav__link">
+      Buttons
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../components/fab/" title="Buttons FAB" class="md-nav__link">
+      Buttons FAB
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../components/bottom-navigation/" title="Bottom navigation" class="md-nav__link">
+      Bottom navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../components/bottom-sheets/" title="Bottom sheets" class="md-nav__link">
+      Bottom sheets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../components/cards/" title="Cards" class="md-nav__link">
+      Cards
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../components/dialogs/" title="Dialogs" class="md-nav__link">
+      Dialogs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../components/menus/" title="Menus" class="md-nav__link">
+      Menus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../components/pickers/" title="Pickers" class="md-nav__link">
+      Pickers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../components/progress/" title="Progress & activity" class="md-nav__link">
+      Progress & activity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../components/rating-bar/" title="Rating Bar" class="md-nav__link">
+      Rating Bar
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../components/selection-controls/" title="Selection controls" class="md-nav__link">
+      Selection controls
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../components/snackbars-and-toasts/" title="Snackbars & Toasts" class="md-nav__link">
+      Snackbars & Toasts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../components/tabs/" title="Tabs" class="md-nav__link">
+      Tabs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../components/text-fields/" title="Text fields" class="md-nav__link">
+      Text fields
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../components/toolbars/" title="Toolbars" class="md-nav__link">
+      Toolbars
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Patterns
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Patterns
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../data-formats/" title="Data formats" class="md-nav__link">
+      Data formats
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../launch-screen/" title="Launch screens" class="md-nav__link">
+      Launch screens
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../navigation-drawer/" title="Navigation drawer" class="md-nav__link">
+      Navigation drawer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Notifications
+      </label>
+    
+    <a href="./" title="Notifications" class="md-nav__link md-nav__link--active">
+      Notifications
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#notifications-with-text" title="Notifications with text" class="md-nav__link">
+    Notifications with text
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-add" title="How to add?" class="md-nav__link">
+    How to add?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-style" title="How to style?" class="md-nav__link">
+    How to style?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notifications-with-images" title="Notifications with images" class="md-nav__link">
+    Notifications with images
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vibrating-notifications" title="Vibrating notifications" class="md-nav__link">
+    Vibrating notifications
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notifications-with-lights" title="Notifications with lights" class="md-nav__link">
+    Notifications with lights
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-and-best-practices" title="Tips and best practices" class="md-nav__link">
+    Tips and best practices
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expanded-notifications-layouts" title="Expanded Notifications Layouts" class="md-nav__link">
+    Expanded Notifications Layouts
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-use-it" title="How to use it?" class="md-nav__link">
+    How to use it?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#big-text-style" title="Big Text Style" class="md-nav__link">
+    Big Text Style
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#big-picture-style" title="Big Picture Style" class="md-nav__link">
+    Big Picture Style
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inbox-style" title="Inbox Style" class="md-nav__link">
+    Inbox Style
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tricks-and-good-practices" title="Tricks and good practices" class="md-nav__link">
+    Tricks and good practices
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../swipe-to-refresh/" title="Swipe to refresh" class="md-nav__link">
+      Swipe to refresh
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../article-template/" title="Article name" class="md-nav__link">
+      Article name
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#notifications-with-text" title="Notifications with text" class="md-nav__link">
+    Notifications with text
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-add" title="How to add?" class="md-nav__link">
+    How to add?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-style" title="How to style?" class="md-nav__link">
+    How to style?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notifications-with-images" title="Notifications with images" class="md-nav__link">
+    Notifications with images
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vibrating-notifications" title="Vibrating notifications" class="md-nav__link">
+    Vibrating notifications
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notifications-with-lights" title="Notifications with lights" class="md-nav__link">
+    Notifications with lights
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tips-and-best-practices" title="Tips and best practices" class="md-nav__link">
+    Tips and best practices
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#expanded-notifications-layouts" title="Expanded Notifications Layouts" class="md-nav__link">
+    Expanded Notifications Layouts
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-use-it" title="How to use it?" class="md-nav__link">
+    How to use it?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#big-text-style" title="Big Text Style" class="md-nav__link">
+    Big Text Style
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#big-picture-style" title="Big Picture Style" class="md-nav__link">
+    Big Picture Style
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inbox-style" title="Inbox Style" class="md-nav__link">
+    Inbox Style
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tricks-and-good-practices" title="Tricks and good practices" class="md-nav__link">
+    Tricks and good practices
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/materialdoc/materialdoc-web/edit/master/docs/patterns/notifications.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Notifications</h1>
+                
+                <h2 id="notifications-with-text">Notifications with text<a class="headerlink" href="#notifications-with-text" title="Permanent link">&para;</a></h2>
+<p><img alt="Material Style Notification" src="/images/notification-1.png" /></p>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>From Google material design <a href="https://material.io/guidelines/patterns/notifications.html">documentation</a>:</p>
+<p>Notifications inform your app’s users about relevant and timely events in your app. You can create notifications to draw attention to messages from friends, alert a commuter to traffic slowdowns, show the progress of a new app being installed, and more.</p>
+<p>Notifications should be synced to all of a user’s devices.</p>
+</div>
+<h3 id="how-to-add">How to add?<a class="headerlink" href="#how-to-add" title="Permanent link">&para;</a></h3>
+<p>I. In your <code>build.gradle</code> file add the latest <code>appcompat</code> library.</p>
+<div class="codehilite"><pre><span></span>dependencies {
+    compile &#39;com.android.support:appcompat-v7:X.X.X&#39;
+    // X.X.X specify the version
+}
+</pre></div>
+
+
+<p>II. Get an instance of the <code>NotificationCompat.Builder</code>.</p>
+<div class="codehilite"><pre><span></span><span class="n">NotificationCompat</span><span class="o">.</span><span class="na">Builder</span> <span class="n">builder</span> <span class="o">=</span>
+    <span class="k">new</span> <span class="n">NotificationCompat</span><span class="o">.</span><span class="na">Builder</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
+</pre></div>
+
+
+<p>III. Create a <code>Notification</code> using <code>Notification.Builder</code></p>
+<div class="codehilite"><pre><span></span><span class="n">Notification</span> <span class="n">notification</span> <span class="o">=</span> <span class="n">builder</span>
+    <span class="o">.</span><span class="na">setContentTitle</span><span class="o">(</span><span class="s">&quot;Title&quot;</span><span class="o">)</span>
+    <span class="o">.</span><span class="na">setContentText</span><span class="o">(</span><span class="s">&quot;This is a notification!&quot;</span><span class="o">)</span>
+    <span class="o">.</span><span class="na">setSmallIcon</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">ic_notifications_white_small</span><span class="o">)</span>
+    <span class="o">.</span><span class="na">build</span><span class="o">();</span>
+</pre></div>
+
+
+<p>IV. Show the <code>Notification</code> with the method <code>notify</code> of  <code>NotificationManagerCompat</code> with an id of your choice.</p>
+<div class="codehilite"><pre><span></span><span class="n">NotificationManagerCompat</span> <span class="n">notificationManager</span> <span class="o">=</span>
+    <span class="n">NotificationManagerCompat</span><span class="o">.</span><span class="na">from</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
+
+<span class="n">notificationManager</span><span class="o">.</span><span class="na">notify</span><span class="o">(</span><span class="mh">0x1234</span><span class="o">,</span> <span class="n">notification</span><span class="o">);</span>
+</pre></div>
+
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Title, text and small icon are mandatory in order to show the notification.</p>
+</div>
+<h3 id="how-to-style">How to style?<a class="headerlink" href="#how-to-style" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="/images/notification-2.png" /></p>
+<p>Use the method <code>setColor(int color)</code> of <code>NotificationCompat.Builder</code> to set the color of the round background  your notification.</p>
+<div class="codehilite"><pre><span></span><span class="n">Notification</span> <span class="n">notification</span> <span class="o">=</span>
+    <span class="k">new</span> <span class="n">NotificationCompat</span><span class="o">.</span><span class="na">Builder</span><span class="o">(</span><span class="n">context</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">setContentTitle</span><span class="o">(</span><span class="s">&quot;Title&quot;</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">setContentText</span><span class="o">(</span><span class="s">&quot;This is a notification!&quot;</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">setSmallIcon</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">ic_bell</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">setColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">parseColor</span><span class="o">(</span><span class="s">&quot;#4B8A08&quot;</span><span class="o">))</span>
+        <span class="o">.</span><span class="na">build</span><span class="o">();</span>
+</pre></div>
+
+
+<h2 id="notifications-with-images">Notifications with images<a class="headerlink" href="#notifications-with-images" title="Permanent link">&para;</a></h2>
+<p><img alt="Face styled notification" src="/images/notification-3.png" /></p>
+<p>Use the method <code>setLargeIcon(Bitmap)</code> of  <code>NotificationCompat.Builder</code> to use a big image next to the small icon.</p>
+<div class="codehilite"><pre><span></span><span class="n">Notification</span> <span class="n">notification</span> <span class="o">=</span>
+    <span class="k">new</span> <span class="n">NotificationCompat</span><span class="o">.</span><span class="na">Builder</span><span class="o">(</span><span class="n">context</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">setContentTitle</span><span class="o">(</span><span class="s">&quot;Title&quot;</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">setContentText</span><span class="o">(</span><span class="s">&quot;This is a notification!&quot;</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">setSmallIcon</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">ic_bell</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">setLargeIcon</span><span class="o">(</span><span class="n">profileImageBitmap</span><span class="o">)</span> <span class="c1">// Bitmap</span>
+        <span class="o">.</span><span class="na">setColor</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">parseColor</span><span class="o">(</span><span class="s">&quot;#4B8A08&quot;</span><span class="o">))</span>
+        <span class="o">.</span><span class="na">build</span><span class="o">();</span>
+</pre></div>
+
+
+<h2 id="vibrating-notifications">Vibrating notifications<a class="headerlink" href="#vibrating-notifications" title="Permanent link">&para;</a></h2>
+<p>Use the method <code>setVibrate</code> of <code>NotificationCompat.Builder</code> to create vibrate patterns accompanying the notification.</p>
+<div class="codehilite"><pre><span></span><span class="kt">long</span><span class="o">[]</span> <span class="n">vibratePattern</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">long</span><span class="o">[]</span> <span class="o">{</span>
+   <span class="n">millisToWait</span><span class="o">,</span> <span class="n">millisToVibrate</span><span class="o">,</span>
+   <span class="n">millisToWait</span><span class="o">,</span> <span class="n">millisToVibrate</span>
+<span class="o">}</span>
+
+<span class="n">Notification</span> <span class="n">notification</span> <span class="o">=</span>
+    <span class="k">new</span> <span class="n">NotificationCompat</span><span class="o">.</span><span class="na">Builder</span><span class="o">(</span><span class="n">context</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">setContentTitle</span><span class="o">(</span><span class="s">&quot;Title&quot;</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">setContentText</span><span class="o">(</span><span class="s">&quot;This is a notification!&quot;</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">setSmallIcon</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">ic_bell</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">setVibrate</span><span class="o">(</span><span class="n">vibratePattern</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">build</span><span class="o">();</span>
+</pre></div>
+
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In order to use the vibration you will need to declare the <code>android.permission.VIBRATE</code> in your <code>AndroidManifest.xml</code> file.</p>
+</div>
+<h2 id="notifications-with-lights">Notifications with lights<a class="headerlink" href="#notifications-with-lights" title="Permanent link">&para;</a></h2>
+<p>Use the method <code>setLights(int argb, int msOn, int msOff)</code> of <code>NotificationCompat.Builder</code> to customize the color and the LED pattern shown by the device.</p>
+<div class="codehilite"><pre><span></span><span class="n">Notification</span> <span class="n">notification</span> <span class="o">=</span>
+   <span class="k">new</span> <span class="n">NotificationCompat</span><span class="o">.</span><span class="na">Builder</span><span class="o">(</span><span class="n">context</span><span class="o">)</span>
+      <span class="o">.</span><span class="na">setContentTitle</span><span class="o">(</span><span class="s">&quot;Title&quot;</span><span class="o">)</span>
+      <span class="o">.</span><span class="na">setContentText</span><span class="o">(</span><span class="s">&quot;This is a notification!&quot;</span><span class="o">)</span>
+      <span class="o">.</span><span class="na">setSmallIcon</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">ic_bell</span><span class="o">)</span>
+      <span class="o">.</span><span class="na">setLights</span><span class="o">(</span><span class="n">Color</span><span class="o">.</span><span class="na">MAGENTA</span><span class="o">,</span> <span class="n">onMillis</span><span class="o">,</span> <span class="n">offMillis</span><span class="o">)</span>
+      <span class="o">.</span><span class="na">build</span><span class="o">();</span>
+</pre></div>
+
+
+<h2 id="tips-and-best-practices">Tips and best practices<a class="headerlink" href="#tips-and-best-practices" title="Permanent link">&para;</a></h2>
+<p>I. Notify the user about time-sensitive information directed specifically at them.</p>
+<p>II. For notifications sent by another person, include that person's image.</p>
+<p>III. When the user touches a notification, enable the user to take immediate action. This may open a detail view, such as a message, or a summary view for multiple notifications.</p>
+<p>IV. The round cut is used by default when the <code>setLargeIcon</code> is not used and <code>setSmallIcon</code> method is used. When using the <code>setLargeIcon</code> the circular image has to be done manually.</p>
+<p><img alt="" src="/images/notification-4.png" />
+<img alt="" src="/images/notification-5.png" /></p>
+<h2 id="expanded-notifications-layouts">Expanded Notifications Layouts<a class="headerlink" href="#expanded-notifications-layouts" title="Permanent link">&para;</a></h2>
+<p><img alt="Big Notifications Title Notification" src="/images/big_notifications_title.png" /></p>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>From the Google Material Design <a href="http://developer.android.com/intl/es/design/patterns/notifications.html">documentation</a>_</p>
+<p>You can choose how much detail your app's notifications should provide. They can show the first few lines of a message or show a larger image preview.</p>
+<p>The additional information provides the user with more context, and—in some cases—may allow the user to read a message in its entirety.</p>
+</div>
+<h3 id="how-to-use-it">How to use it?<a class="headerlink" href="#how-to-use-it" title="Permanent link">&para;</a></h3>
+<p>I. Add the latest version of appcompat library on your <code>build.gradle</code>.</p>
+<div class="codehilite"><pre><span></span>dependencies {
+    compile &#39;com.android.support:appcompat-v7:X.X.X&#39;
+    // X.X.X especifica la versión
+}
+</pre></div>
+
+
+<p>II. Retrieve an instance of <code>NotificationCompat.Builder</code>.</p>
+<div class="codehilite"><pre><span></span><span class="n">NotificationCompat</span><span class="o">.</span><span class="na">Builder</span> <span class="n">builder</span> <span class="o">=</span>
+    <span class="k">new</span> <span class="n">NotificationCompat</span><span class="o">.</span><span class="na">Builder</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
+</pre></div>
+
+
+<p>III. Apply a style to the <code>NotificationCompat.Builder</code></p>
+<div class="codehilite"><pre><span></span><span class="n">NotificationCompat</span><span class="o">.</span><span class="na">BigTextStyle</span> <span class="n">style</span> <span class="o">=</span> <span class="k">new</span> <span class="n">NotificationCompat</span><span class="o">.</span><span class="na">BigTextStyle</span><span class="o">(</span><span class="n">builder</span><span class="o">);</span>
+</pre></div>
+
+
+<p>IV. You have several styles available.</p>
+<div class="codehilite"><pre><span></span><span class="c1">// Big Text Style</span>
+<span class="n">NotificationCompat</span><span class="o">.</span><span class="na">BigTextStyle</span> <span class="n">style</span>
+    <span class="o">=</span> <span class="k">new</span> <span class="n">NotificationCompat</span><span class="o">.</span><span class="na">BigTextStyle</span><span class="o">(</span><span class="n">builder</span><span class="o">);</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="c1">// Big Picture Style</span>
+<span class="n">NotificationCompat</span><span class="o">.</span><span class="na">BigPictureStyle</span> <span class="n">style</span>
+    <span class="o">=</span> <span class="k">new</span> <span class="n">NotificationCompat</span><span class="o">.</span><span class="na">BigPictureStyle</span><span class="o">(</span><span class="n">builder</span><span class="o">);</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="c1">// Inbox Style</span>
+<span class="n">NotificationCompat</span><span class="o">.</span><span class="na">InboxStyle</span> <span class="n">style</span>
+    <span class="o">=</span> <span class="k">new</span> <span class="n">NotificationCompat</span><span class="o">.</span><span class="na">InboxStyle</span><span class="o">(</span><span class="n">builder</span><span class="o">);</span>
+</pre></div>
+
+
+<p>V. Build a <code>Notification</code> using the <code>NotificationCompat.Builder</code></p>
+<div class="codehilite"><pre><span></span><span class="n">Notification</span> <span class="n">notification</span> <span class="o">=</span> <span class="n">builder</span>
+    <span class="o">.</span><span class="na">setContentTitle</span><span class="o">(</span><span class="s">&quot;Title&quot;</span><span class="o">)</span>
+    <span class="o">.</span><span class="na">setContentText</span><span class="o">(</span><span class="s">&quot;This is a notification!&quot;</span><span class="o">)</span>
+    <span class="o">.</span><span class="na">setSmallIcon</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">ic_notifications_white_small</span><span class="o">)</span>
+    <span class="o">.</span><span class="na">build</span><span class="o">();</span>
+</pre></div>
+
+
+<p>VI. Pass along the <code>Notification</code> object via <code>notify</code> method from  <code>NotificationManagerCompat</code> and assign an ID of your choice.</p>
+<div class="codehilite"><pre><span></span><span class="n">NotificationManagerCompat</span> <span class="n">notificationManager</span> <span class="o">=</span>
+    <span class="n">NotificationManagerCompat</span><span class="o">.</span><span class="na">from</span><span class="o">(</span><span class="n">context</span><span class="o">);</span>
+
+<span class="n">notificationManager</span><span class="o">.</span><span class="na">notify</span><span class="o">(</span><span class="mh">0x1234</span><span class="o">,</span> <span class="n">notification</span><span class="o">);</span>
+</pre></div>
+
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Title, text and small icon are mandatory so the notification can be displayed.</p>
+</div>
+<h3 id="big-text-style">Big Text Style<a class="headerlink" href="#big-text-style" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="/images/big_text_expanded.png" /></p>
+<p><img alt="Big Text Style Compressed Notification" src="/images/big_text_compressed.png" /></p>
+<p>Big Text Style is used to show large quantities of text. The notification body can hold around <code>450</code> characters. The rest of the text will be trimmed <strong>without</strong> the use of an ellipsis.</p>
+<p>I. Apply the style by passing the builder to a <code>NotificationCompat.BigTextStyle</code>
+instance.</p>
+<div class="codehilite"><pre><span></span><span class="n">NotificationCompat</span><span class="o">.</span><span class="na">BigTextStyle</span> <span class="n">style</span> <span class="o">=</span>
+    <span class="k">new</span> <span class="n">NotificationCompat</span><span class="o">.</span><span class="na">BigTextStyle</span><span class="o">(</span><span class="n">builder</span><span class="o">);</span>
+</pre></div>
+
+
+<p>II. Set the long text you want to display on the expanded mode.</p>
+<div class="codehilite"><pre><span></span><span class="n">style</span><span class="o">.</span><span class="na">bigText</span><span class="o">(</span><span class="s">&quot;The path of...&quot;</span> <span class="cm">/* long text goes here */</span> <span class="o">);</span>
+</pre></div>
+
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For the compressed layout, the text set via <code>setContentText</code> of <code>NotificationCompat.Builder</code> will be shown.</p>
+</div>
+<p>III. Use the method <code>setBigContentTitle</code> of <code>NotificationCompat.BigTextStyle</code> if you want a different title for the expanded layout form.</p>
+<div class="codehilite"><pre><span></span><span class="n">style</span><span class="o">.</span><span class="na">bigText</span><span class="o">(</span><span class="s">&quot;The path of...&quot;</span> <span class="cm">/* long text goes here */</span><span class="o">)</span>
+     <span class="o">.</span><span class="na">setBigContentTitle</span><span class="o">(</span><span class="s">&quot;Expanded title&quot;</span><span class="o">);</span>
+</pre></div>
+
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you do not call this method the title will fallback to the value you set on <code>setContentTitle</code> from <code>NotificationCompat.Builder</code>.</p>
+</div>
+<p>IV. Add if you like an additional summary to the expanded layout form.</p>
+<div class="codehilite"><pre><span></span><span class="n">style</span><span class="o">.</span><span class="na">bigText</span><span class="o">(</span><span class="s">&quot;The path of...&quot;</span> <span class="cm">/* long text goes here */</span> <span class="o">)</span>
+     <span class="o">.</span><span class="na">setBigContentTitle</span><span class="o">(</span><span class="s">&quot;Expanded title&quot;</span><span class="o">)</span>
+     <span class="o">.</span><span class="na">setSummaryText</span><span class="o">(</span><span class="s">&quot;Summary text&quot;</span><span class="o">);</span>
+</pre></div>
+
+
+<h3 id="big-picture-style">Big Picture Style<a class="headerlink" href="#big-picture-style" title="Permanent link">&para;</a></h3>
+<p><img alt="Big Picture Style Expanded" src="/images/big_picture_expanded-1.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Big Picture Style is used to show image-rich content. The image limits will be phone screen length by <code>256dp</code> height. On Tablets, the image is 2:1 ratio. The rest of the image will be cropped with a <code>ScaleType.CROP_CENTER</code>.</p>
+</div>
+<p>I. Create a new instance of <code>NotificationCompat.BigPictureStyle</code> which will accept a <code>NotificationCompat.Builder</code> instance.</p>
+<div class="codehilite"><pre><span></span><span class="n">NotificationCompat</span><span class="o">.</span><span class="na">BigPictureStyle</span> <span class="n">style</span>
+    <span class="o">=</span> <span class="k">new</span> <span class="n">NotificationCompat</span><span class="o">.</span><span class="na">BigPictureStyle</span><span class="o">(</span><span class="n">builder</span><span class="o">);</span>
+</pre></div>
+
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check how <code>NotificationCompat.Builder</code> are managed on the <a href="http://www.materialdoc.com/notifications/">basic notifications</a> article.</p>
+</div>
+<p>II. Add the image you want to display by using <code>BigPictureStyle.bigPicture</code> method. The format of the image must be a <code>Bitmap</code>.</p>
+<div class="codehilite"><pre><span></span><span class="n">Bitmap</span> <span class="n">picture</span> <span class="o">=</span> <span class="n">BitmapFactory</span><span class="o">.</span><span class="na">decodeResource</span><span class="o">(</span><span class="n">getResources</span><span class="o">(),</span> <span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">conga</span><span class="o">);</span>
+<span class="n">style</span><span class="o">.</span><span class="na">bigPicture</span><span class="o">(</span><span class="n">picture</span><span class="o">);</span>
+</pre></div>
+
+
+<p>III. Add a new <code>LargeIcon</code> if you want to change it. In other case it will default to <code>NotificationCompat.Builder.setLargeIcon(Bitmap)</code>.</p>
+<div class="codehilite"><pre><span></span><span class="n">Bitmap</span> <span class="n">largeExpandedAvatar</span> <span class="o">=</span> <span class="n">BitmapFactory</span><span class="o">.</span><span class="na">decodeResource</span><span class="o">(</span>
+             <span class="n">getResources</span><span class="o">(),</span> <span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">koala_avatar</span><span class="o">)</span>  
+
+<span class="n">style</span><span class="o">.</span><span class="na">bigPicture</span><span class="o">(</span><span class="n">picture</span><span class="o">)</span>
+     <span class="o">.</span><span class="na">bigLargeIcon</span><span class="o">(</span><span class="n">largeExpandedAvatar</span><span class="o">);</span>
+</pre></div>
+
+
+<p>IV. Add a new title for the expanded layout form.</p>
+<div class="codehilite"><pre><span></span><span class="n">Bitmap</span> <span class="n">picture</span> <span class="o">=</span> <span class="n">BitmapFactory</span><span class="o">.</span><span class="na">decodeResource</span><span class="o">(</span><span class="n">getResources</span><span class="o">(),</span> <span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">conga</span><span class="o">);</span>
+<span class="n">Bitmap</span> <span class="n">largeExpandedAvatar</span> <span class="o">=</span> <span class="n">BitmapFactory</span><span class="o">.</span><span class="na">decodeResource</span><span class="o">(</span>
+             <span class="n">getResources</span><span class="o">(),</span> <span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">koala_avatar</span><span class="o">)</span>  
+
+<span class="n">style</span><span class="o">.</span><span class="na">bigPicture</span><span class="o">(</span><span class="n">picture</span><span class="o">)</span>
+     <span class="o">.</span><span class="na">bigLargeIcon</span><span class="o">(</span><span class="n">largeExpandedAvatar</span><span class="o">);</span>
+     <span class="o">.</span><span class="na">setBigContentTitle</span><span class="o">(</span><span class="s">&quot;Expanded title&quot;</span><span class="o">)</span>
+</pre></div>
+
+
+<p>V. Add a summary which sums up the notification content.</p>
+<div class="codehilite"><pre><span></span><span class="n">Bitmap</span> <span class="n">picture</span> <span class="o">=</span> <span class="n">BitmapFactory</span><span class="o">.</span><span class="na">decodeResource</span><span class="o">(</span><span class="n">getResources</span><span class="o">(),</span> <span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">conga</span><span class="o">);</span>
+<span class="n">Bitmap</span> <span class="n">largeExpandedAvatar</span> <span class="o">=</span> <span class="n">BitmapFactory</span><span class="o">.</span><span class="na">decodeResource</span><span class="o">(</span>
+             <span class="n">getResources</span><span class="o">(),</span> <span class="n">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">koala_avatar</span><span class="o">)</span>  
+
+<span class="n">style</span><span class="o">.</span><span class="na">bigPicture</span><span class="o">(</span><span class="n">picture</span><span class="o">)</span>
+     <span class="o">.</span><span class="na">bigLargeIcon</span><span class="o">(</span><span class="n">largeExpandedAvatar</span><span class="o">);</span>
+     <span class="o">.</span><span class="na">setBigContentTitle</span><span class="o">(</span><span class="s">&quot;Expanded title&quot;</span><span class="o">)</span>
+     <span class="o">.</span><span class="na">setSummaryText</span><span class="o">(</span><span class="s">&quot;Summary text&quot;</span><span class="o">);</span>
+</pre></div>
+
+
+<h3 id="inbox-style">Inbox Style<a class="headerlink" href="#inbox-style" title="Permanent link">&para;</a></h3>
+<p><img alt="Inbox Expanded Style" src="/images/inbox_style_expanded-1.png" /></p>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>Inbox Style allows a notification made of several independent lines of short text, as in the normal notifications. This style accepts up to <code>7</code> lines. Any number above the notification will ellipsize further lines by adding a "...".</p>
+</div>
+<p>I. Apply the style by creating a new <code>NotificationCompat.BigPictureStyle</code> instance.</p>
+<div class="codehilite"><pre><span></span><span class="n">NotificationCompat</span><span class="o">.</span><span class="na">InboxStyle</span> <span class="n">style</span> <span class="o">=</span>
+    <span class="k">new</span> <span class="n">NotificationCompat</span><span class="o">.</span><span class="na">InboxStyle</span><span class="o">(</span><span class="n">builder</span><span class="o">);</span>
+</pre></div>
+
+
+<p>II. Add as many lines as you wish.</p>
+<div class="codehilite"><pre><span></span><span class="n">style</span><span class="o">.</span><span class="na">addLine</span><span class="o">(</span><span class="s">&quot;This is line #&quot;</span> <span class="o">+</span> <span class="n">i</span><span class="o">);</span>
+</pre></div>
+
+
+<p>III. Add a different title if you want by using <code>setBigContentTitle</code>.</p>
+<div class="codehilite"><pre><span></span><span class="n">style</span><span class="o">.</span><span class="na">addLine</span><span class="o">(</span><span class="s">&quot;This is line #&quot;</span> <span class="o">+</span> <span class="n">i</span><span class="o">)</span>
+    <span class="o">.</span><span class="na">setBigContentTitle</span><span class="o">(</span><span class="s">&quot;Expanded title&quot;</span><span class="o">);</span>
+</pre></div>
+
+
+<p>IV. Optionally add a summary to the notification.</p>
+<div class="codehilite"><pre><span></span><span class="n">style</span><span class="o">.</span><span class="na">addLine</span><span class="o">(</span><span class="s">&quot;This is line #&quot;</span> <span class="o">+</span> <span class="n">i</span><span class="o">)</span>
+    <span class="o">.</span><span class="na">setBigContentTitle</span><span class="o">(</span><span class="s">&quot;Expanded title&quot;</span><span class="o">)</span>
+    <span class="o">.</span><span class="na">setSummaryText</span><span class="o">(</span><span class="s">&quot;Summary text&quot;</span><span class="o">);</span>
+</pre></div>
+
+
+<h3 id="tricks-and-good-practices">Tricks and good practices<a class="headerlink" href="#tricks-and-good-practices" title="Permanent link">&para;</a></h3>
+<p>I. Guidelines insist that every app should display a single notification at all times in order to keep the notification list clean. Use <code>InboxStyle</code> to join several notifications in one while providing a history of the last ones.</p>
+<p>II. Expanded layouts will be automatically displayed when the notification list have enough space, while compressing them otherwise. Play with different titles, <code>LargeIcon</code> and summaries to pick the interest of your user in both cases. If your notification is related to an image content, make it more attractive by using <code>BigPictureStyle</code>.</p>
+<p>III. If your notification does not require images and there is only one, using by default <code>BigTextStyle</code> will not hurt. In this way, you will ensure that you can accomodate as much text as possible and giving the user the maximum context available.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../navigation-drawer/" title="Navigation drawer" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Navigation drawer
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../swipe-to-refresh/" title="Swipe to refresh" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Swipe to refresh
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 - 2018 Dmytro Danylyk
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/materialdoc" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/dmytrodanylyk" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/dmytrodanylyk" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.627ea402.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-69898504-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>

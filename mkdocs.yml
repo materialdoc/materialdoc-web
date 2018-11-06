@@ -12,7 +12,9 @@ repo_url: 'https://github.com/materialdoc/materialdoc-web'
 copyright: 'Copyright &copy; 2017 - 2018 Dmytro Danylyk'
 
 # Documentation and theme
-theme_dir: 'material'
+theme:
+    name: material
+    custom_dir: material/
 site_favicon: 'images/favicon.ico'
 
 # Options
@@ -40,7 +42,7 @@ google_analytics:
   - 'UA-69898504-1'
   - 'auto'
 
-pages:
+nav:
     - Home:
       - About: index.md
       - Application: application.md

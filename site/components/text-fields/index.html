@@ -1,0 +1,1498 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Material Components for Android">
+      
+      
+        <link rel="canonical" href="https://materialdoc.com/components/text-fields/">
+      
+      
+        <meta name="author" content="Dmytro Danylyk">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.6">
+    
+    
+      
+        <title>Text fields - Materialdoc</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-7916751828489555",
+        enable_page_level_ads: true
+      });
+    </script>
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#text-fields" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://materialdoc.com" title="Materialdoc" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Materialdoc
+              </span>
+              <span class="md-header-nav__topic">
+                Text fields
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/materialdoc/materialdoc-web/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://materialdoc.com" title="Materialdoc" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Materialdoc
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/materialdoc/materialdoc-web/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      Home
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Home
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../application/" title="Application" class="md-nav__link">
+      Application
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../how-to-contribute/" title="Contribute" class="md-nav__link">
+      Contribute
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Components
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Components
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../autocomplete/" title="Auto-complete" class="md-nav__link">
+      Auto-complete
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../buttons/" title="Buttons" class="md-nav__link">
+      Buttons
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../fab/" title="Buttons FAB" class="md-nav__link">
+      Buttons FAB
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../bottom-navigation/" title="Bottom navigation" class="md-nav__link">
+      Bottom navigation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../bottom-sheets/" title="Bottom sheets" class="md-nav__link">
+      Bottom sheets
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cards/" title="Cards" class="md-nav__link">
+      Cards
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../dialogs/" title="Dialogs" class="md-nav__link">
+      Dialogs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../menus/" title="Menus" class="md-nav__link">
+      Menus
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pickers/" title="Pickers" class="md-nav__link">
+      Pickers
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../progress/" title="Progress & activity" class="md-nav__link">
+      Progress & activity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../rating-bar/" title="Rating Bar" class="md-nav__link">
+      Rating Bar
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../selection-controls/" title="Selection controls" class="md-nav__link">
+      Selection controls
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../snackbars-and-toasts/" title="Snackbars & Toasts" class="md-nav__link">
+      Snackbars & Toasts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tabs/" title="Tabs" class="md-nav__link">
+      Tabs
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Text fields
+      </label>
+    
+    <a href="./" title="Text fields" class="md-nav__link md-nav__link--active">
+      Text fields
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#text-fields" title="Text Fields" class="md-nav__link">
+    Text Fields
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-add" title="How to add?" class="md-nav__link">
+    How to add?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-style" title="How to style?" class="md-nav__link">
+    How to style?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#single-line-text-field" title="Single-line text field" class="md-nav__link">
+    Single-line text field
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multi-line-text-field" title="Multi-line text field" class="md-nav__link">
+    Multi-line text field
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#full-width-text-field" title="Full-width text field" class="md-nav__link">
+    Full-width text field
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#floating-labels" title="Floating labels" class="md-nav__link">
+    Floating labels
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-add_1" title="How to add?" class="md-nav__link">
+    How to add?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-style_1" title="How to style?" class="md-nav__link">
+    How to style?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-input-errors" title="User input errors" class="md-nav__link">
+    User input errors
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-add_2" title="How to add?" class="md-nav__link">
+    How to add?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-style_2" title="How to style?" class="md-nav__link">
+    How to style?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#character-counter" title="Character counter" class="md-nav__link">
+    Character counter
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-add_3" title="How to add?" class="md-nav__link">
+    How to add?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-style_3" title="How to style?" class="md-nav__link">
+    How to style?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#password-toggle" title="Password toggle" class="md-nav__link">
+    Password toggle
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-add_4" title="How to add?" class="md-nav__link">
+    How to add?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-style_4" title="How to style?" class="md-nav__link">
+    How to style?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icon" title="Icon" class="md-nav__link">
+    Icon
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../toolbars/" title="Toolbars" class="md-nav__link">
+      Toolbars
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Patterns
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Patterns
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../patterns/data-formats/" title="Data formats" class="md-nav__link">
+      Data formats
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../patterns/launch-screen/" title="Launch screens" class="md-nav__link">
+      Launch screens
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../patterns/navigation-drawer/" title="Navigation drawer" class="md-nav__link">
+      Navigation drawer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../patterns/notifications/" title="Notifications" class="md-nav__link">
+      Notifications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../patterns/swipe-to-refresh/" title="Swipe to refresh" class="md-nav__link">
+      Swipe to refresh
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../article-template/" title="Article name" class="md-nav__link">
+      Article name
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#text-fields" title="Text Fields" class="md-nav__link">
+    Text Fields
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-add" title="How to add?" class="md-nav__link">
+    How to add?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-style" title="How to style?" class="md-nav__link">
+    How to style?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#single-line-text-field" title="Single-line text field" class="md-nav__link">
+    Single-line text field
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multi-line-text-field" title="Multi-line text field" class="md-nav__link">
+    Multi-line text field
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#full-width-text-field" title="Full-width text field" class="md-nav__link">
+    Full-width text field
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#floating-labels" title="Floating labels" class="md-nav__link">
+    Floating labels
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-add_1" title="How to add?" class="md-nav__link">
+    How to add?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-style_1" title="How to style?" class="md-nav__link">
+    How to style?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-input-errors" title="User input errors" class="md-nav__link">
+    User input errors
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-add_2" title="How to add?" class="md-nav__link">
+    How to add?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-style_2" title="How to style?" class="md-nav__link">
+    How to style?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#character-counter" title="Character counter" class="md-nav__link">
+    Character counter
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-add_3" title="How to add?" class="md-nav__link">
+    How to add?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-style_3" title="How to style?" class="md-nav__link">
+    How to style?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#password-toggle" title="Password toggle" class="md-nav__link">
+    Password toggle
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-add_4" title="How to add?" class="md-nav__link">
+    How to add?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-style_4" title="How to style?" class="md-nav__link">
+    How to style?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#icon" title="Icon" class="md-nav__link">
+    Icon
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/materialdoc/materialdoc-web/edit/master/docs/components/text-fields.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Text fields</h1>
+                
+                <h2 id="text-fields">Text Fields<a class="headerlink" href="#text-fields" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../../images/text-field-intro-v1.png" /></p>
+<div class="admonition quote">
+<p class="admonition-title">From google material design <a href="https://material.io/guidelines/components/text-fields.html">documentation</a>.</p>
+<p>Text fields allow the user to input text, select text (cut, copy, paste), and lookup data via auto-completion.</p>
+</div>
+<h3 id="how-to-add">How to add?<a class="headerlink" href="#how-to-add" title="Permanent link">&para;</a></h3>
+<p>I. In your <code>build.gradle</code> add latest <code>appcompat</code> library.</p>
+<div class="codehilite"><pre><span></span>dependencies {
+    compile &#39;com.android.support:appcompat-v7:X.X.X&#39; // where X.X.X version
+}
+</pre></div>
+
+
+<p>II. Make your activity extend <code>android.support.v7.app.AppCompatActivity</code>.</p>
+<div class="codehilite"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">AppCompatActivity</span> <span class="o">{</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</pre></div>
+
+
+<p>III. Declare your <code>EditText</code> inside any <code>layout.xml</code> file.</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;EditText</span>
+    <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+    <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+    <span class="na">android:hint=</span><span class="s">&quot;Hint text&quot;</span><span class="nt">/&gt;</span>
+</pre></div>
+
+
+<h3 id="how-to-style">How to style?<a class="headerlink" href="#how-to-style" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../images/text-field-style-v1.png" /></p>
+<p>I. Declare custom style in your <code>styles.xml</code> file.</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;style</span> <span class="na">name=</span><span class="s">&quot;MyEditText&quot;</span> <span class="na">parent=</span><span class="s">&quot;Theme.AppCompat.Light&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&quot;colorControlNormal&quot;</span><span class="nt">&gt;</span>@color/indigo<span class="nt">&lt;/item&gt;</span>
+    <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&quot;colorControlActivated&quot;</span><span class="nt">&gt;</span>@color/pink<span class="nt">&lt;/item&gt;</span>
+<span class="nt">&lt;/style&gt;</span>
+</pre></div>
+
+
+<p>II. Apply this style to your <code>EditText</code> via <code>android:theme</code> attribute.</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;EditText</span>
+    <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+    <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+    <span class="na">android:hint=</span><span class="s">&quot;Hint text&quot;</span>
+    <span class="na">android:theme=</span><span class="s">&quot;@style/MyEditText&quot;</span><span class="nt">/&gt;</span>
+</pre></div>
+
+
+<h2 id="single-line-text-field">Single-line text field<a class="headerlink" href="#single-line-text-field" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">From google material design <a href="https://material.io/guidelines/components/text-fields.html">documentation</a>.</p>
+<p>Single-line fields automatically scroll their content to the left as the text input cursor reaches the right edge of the input field.</p>
+</div>
+<p>To make your <code>EditText</code> single line add <code>android:inputType</code> attribute and set it's value to <code>text</code>.</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;EditText</span>
+    <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+    <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+    <span class="na">android:inputType=</span><span class="s">&quot;text&quot;</span>
+    <span class="na">android:hint=</span><span class="s">&quot;Hint text&quot;</span><span class="nt">/&gt;</span>
+</pre></div>
+
+
+<h2 id="multi-line-text-field">Multi-line text field<a class="headerlink" href="#multi-line-text-field" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">From google material design <a href="https://material.io/guidelines/components/text-fields.html">documentation</a>.</p>
+<p>Multi-line text fields automatically break to a new line for overflow text and scroll vertically when the cursor reaches the lower edge.</p>
+</div>
+<p>To make your <code>EditText</code> multi-line add <code>android:inputType</code> attribute and set it's value to <code>textMultiLine</code>.</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;EditText</span>
+    <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+    <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+    <span class="na">android:inputType=</span><span class="s">&quot;textMultiLine&quot;</span>
+    <span class="na">android:hint=</span><span class="s">&quot;Hint text&quot;</span><span class="nt">/&gt;</span>
+</pre></div>
+
+
+<h2 id="full-width-text-field">Full-width text field<a class="headerlink" href="#full-width-text-field" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../../images/Full-width-text-field-v2-1.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">From google material design <a href="https://material.io/guidelines/components/text-fields.html">documentation</a>.</p>
+<p>Full-width text fields are useful for more in-depth tasks.</p>
+</div>
+<p>I. Declare custom style in your <code>styles.xml</code> file.</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;style</span> <span class="na">name=</span><span class="s">&quot;FullWidthEditText&quot;</span> <span class="na">parent=</span><span class="s">&quot;Widget.AppCompat.EditText&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&quot;android:padding&quot;</span><span class="nt">&gt;</span>20dp<span class="nt">&lt;/item&gt;</span>
+    <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&quot;android:background&quot;</span><span class="nt">&gt;</span>@null<span class="nt">&lt;/item&gt;</span>
+    <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&quot;android:textSize&quot;</span><span class="nt">&gt;</span>@dimen/abc_text_size_subhead_material<span class="nt">&lt;/item&gt;</span>
+<span class="nt">&lt;/style&gt;</span>
+</pre></div>
+
+
+<p>II. Apply this style to your <code>EditText</code> via <code>style</code> attribute.</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;EditText</span>
+    <span class="na">style=</span><span class="s">&quot;@style/FullWidthEditText&quot;</span>
+    <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+    <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+    <span class="na">android:hint=</span><span class="s">&quot;Subject&quot;</span><span class="nt">/&gt;</span>
+</pre></div>
+
+
+<h2 id="floating-labels">Floating labels<a class="headerlink" href="#floating-labels" title="Permanent link">&para;</a></h2>
+<p><img alt="Floating labels" src="../../images/floating-label.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">From google material design <a href="https://material.io/guidelines/components/text-fields.html">documentation</a>.</p>
+<p>When the user engages with the text input field, the floating inline labels move to float above the field.</p>
+</div>
+<h3 id="how-to-add_1">How to add?<a class="headerlink" href="#how-to-add_1" title="Permanent link">&para;</a></h3>
+<p>I. In your <code>build.gradle</code> add latest <code>appcompat</code> and <code>design</code> libraries.</p>
+<div class="codehilite"><pre><span></span>dependencies {
+    compile &#39;com.android.support:appcompat-v7:X.X.X&#39; // where X.X.X version
+    compile &#39;com.android.support:design:X.X.X&#39; // where X.X.X version
+}
+</pre></div>
+
+
+<p>II. Make your activity extend <code>android.support.v7.app.AppCompatActivity</code>.</p>
+<div class="codehilite"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">AppCompatActivity</span> <span class="o">{</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</pre></div>
+
+
+<p>III. Declare your <code>EditText</code> inside any <code>layout.xml</code> file and wrap it with <code>TextInputLayout</code>.</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;android.support.design.widget.TextInputLayout</span>
+    <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+    <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;EditText</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:hint=</span><span class="s">&quot;@string/Title&quot;</span> <span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/android.support.design.widget.TextInputLayout&gt;</span>
+</pre></div>
+
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Both widgets <code>TextInputLayout</code> and <code>EditText</code> have <code>android:hint</code> attribute, you can use any of them. If your app supports landscape mode, replace <code>EditText</code> with <code>TextInputEditText</code> in order for the hint to display correctly.</p>
+</div>
+<h3 id="how-to-style_1">How to style?<a class="headerlink" href="#how-to-style_1" title="Permanent link">&para;</a></h3>
+<p><img alt="Floating labels" src="../../images/flaoting-label-styles.png" /></p>
+<p>I. Declare custom styles in your <code>styles.xml</code> file.</p>
+<div class="codehilite"><pre><span></span><span class="c">&lt;!--Floating label text style--&gt;</span>
+<span class="nt">&lt;style</span> <span class="na">name=</span><span class="s">&quot;MyHintText&quot;</span> <span class="na">parent=</span><span class="s">&quot;TextAppearance.AppCompat.Small&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&quot;android:textColor&quot;</span><span class="nt">&gt;</span>@color/pink<span class="nt">&lt;/item&gt;</span>
+<span class="nt">&lt;/style&gt;</span>
+
+<span class="c">&lt;!--Input field style--&gt;</span>
+<span class="nt">&lt;style</span> <span class="na">name=</span><span class="s">&quot;MyEditText&quot;</span> <span class="na">parent=</span><span class="s">&quot;Theme.AppCompat.Light&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&quot;colorControlNormal&quot;</span><span class="nt">&gt;</span>@color/indigo<span class="nt">&lt;/item&gt;</span>
+    <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&quot;colorControlActivated&quot;</span><span class="nt">&gt;</span>@color/pink<span class="nt">&lt;/item&gt;</span>
+<span class="nt">&lt;/style&gt;</span>
+</pre></div>
+
+
+<p>II. Apply this styles to your <code>TextInputLayout</code> via <code>app:hintTextAppearance</code> attribute and to <code>EditText</code> via <code>android:theme</code> attribute.</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;android.support.design.widget.TextInputLayout</span>
+    <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+    <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+    <span class="na">app:hintTextAppearance=</span><span class="s">&quot;@style/MyHintText&quot;</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;EditText</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:hint=</span><span class="s">&quot;@string/Title&quot;</span>
+        <span class="na">android:theme=</span><span class="s">&quot;@style/MyEditText&quot;</span> <span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/android.support.design.widget.TextInputLayout&gt;</span>
+</pre></div>
+
+
+<h2 id="user-input-errors">User input errors<a class="headerlink" href="#user-input-errors" title="Permanent link">&para;</a></h2>
+<p><img alt="User input errors" src="../content/images/2015/11/error-label-1.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">From google material design <a href="https://material.io/guidelines/components/text-fields.html">documentation</a>.</p>
+<p>Help users fix input errors as soon as they are detected. Disable the submission of a form if errors are detected, and if detected only after form submission, clearly explain the error and how to fix it.</p>
+</div>
+<h3 id="how-to-add_2">How to add?<a class="headerlink" href="#how-to-add_2" title="Permanent link">&para;</a></h3>
+<p>I. In your <code>build.gradle</code> add latest <code>appcompat</code> and <code>design</code> libraries.</p>
+<div class="codehilite"><pre><span></span>dependencies {
+    compile &#39;com.android.support:appcompat-v7:X.X.X&#39; // where X.X.X version
+    compile &#39;com.android.support:design:X.X.X&#39; // where X.X.X version
+}
+</pre></div>
+
+
+<p>II. Make your activity extend <code>android.support.v7.app.AppCompatActivity</code>.</p>
+<div class="codehilite"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">AppCompatActivity</span> <span class="o">{</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</pre></div>
+
+
+<p>III. Declare your <code>EditText</code> inside any <code>layout.xml</code> file and wrap it with <code>TextInputLayout</code>.</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;android.support.design.widget.TextInputLayout</span>
+    <span class="na">android:id=</span><span class="s">&quot;@+id/inputLayout&quot;</span>
+    <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+    <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+    <span class="na">app:errorEnabled=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;EditText</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:hint=</span><span class="s">&quot;@string/First_name&quot;</span> <span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/android.support.design.widget.TextInputLayout&gt;</span>
+</pre></div>
+
+
+<p>IV. To show/hide error use <code>TextInputLayout#setError</code>.</p>
+<div class="codehilite"><pre><span></span><span class="n">TextInputLayout</span> <span class="n">inputLayout</span> <span class="o">=</span> <span class="o">(</span><span class="n">TextInputLayout</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span><span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">inputLayout</span><span class="o">);</span>
+<span class="n">inputLayout</span><span class="o">.</span><span class="na">setError</span><span class="o">(</span><span class="s">&quot;First name is required&quot;</span><span class="o">);</span> <span class="c1">// show error</span>
+<span class="n">inputLayout</span><span class="o">.</span><span class="na">setError</span><span class="o">(</span><span class="kc">null</span><span class="o">);</span> <span class="c1">// hide error</span>
+</pre></div>
+
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Declare <code>app:errorEnabled="true"</code> attribute inside <code>TextInputLayout</code> to reserve space for error label below <code>EditText</code>.</p>
+</div>
+<h3 id="how-to-style_2">How to style?<a class="headerlink" href="#how-to-style_2" title="Permanent link">&para;</a></h3>
+<p><img alt="User input errors" src="../../images/error-label-styles-2-1.png" /></p>
+<p>I. Declare custom styles in your <code>styles.xml</code> file.</p>
+<div class="codehilite"><pre><span></span><span class="c">&lt;!--Error label text style--&gt;</span>
+<span class="nt">&lt;style</span> <span class="na">name=</span><span class="s">&quot;MyErrorText&quot;</span> <span class="na">parent=</span><span class="s">&quot;TextAppearance.AppCompat.Small&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&quot;android:textColor&quot;</span><span class="nt">&gt;</span>@color/pink<span class="nt">&lt;/item&gt;</span>
+<span class="nt">&lt;/style&gt;</span>
+
+<span class="c">&lt;!--Input field style--&gt;</span>
+<span class="nt">&lt;style</span> <span class="na">name=</span><span class="s">&quot;MyEditText&quot;</span> <span class="na">parent=</span><span class="s">&quot;Theme.AppCompat.Light&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&quot;colorControlNormal&quot;</span><span class="nt">&gt;</span>@color/indigo<span class="nt">&lt;/item&gt;</span>
+    <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&quot;colorControlActivated&quot;</span><span class="nt">&gt;</span>@color/pink<span class="nt">&lt;/item&gt;</span>
+<span class="nt">&lt;/style&gt;</span>
+</pre></div>
+
+
+<p>II. Apply this styles to your <code>TextInputLayout</code> via <code>app:errorTextAppearance</code> attribute and to <code>EditText</code> via <code>android:theme</code> attribute.</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;android.support.design.widget.TextInputLayout</span>
+    <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+    <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+    <span class="na">app:errorTextAppearance=</span><span class="s">&quot;@style/MyErrorText&quot;</span>
+    <span class="na">app:errorEnabled=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;EditText</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:hint=</span><span class="s">&quot;@string/Title&quot;</span>
+        <span class="na">android:theme=</span><span class="s">&quot;@style/MyEditText&quot;</span> <span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/android.support.design.widget.TextInputLayout&gt;</span>
+</pre></div>
+
+
+<h2 id="character-counter">Character counter<a class="headerlink" href="#character-counter" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../../images/counter.gif" /></p>
+<div class="admonition note">
+<p class="admonition-title">From google material design <a href="https://material.io/guidelines/components/text-fields.html">documentation</a>.</p>
+<p>Use a character counter in fields where a character restriction is in place.</p>
+</div>
+<h3 id="how-to-add_3">How to add?<a class="headerlink" href="#how-to-add_3" title="Permanent link">&para;</a></h3>
+<p>I. In your <code>build.gradle</code> add latest <code>appcompat</code> and <code>design</code> libraries.</p>
+<div class="codehilite"><pre><span></span>dependencies {  
+    compile &#39;com.android.support:appcompat-v7:X.X.X&#39; // where X.X.X version
+    compile &#39;com.android.support:design:X.X.X&#39; // where X.X.X version
+}
+</pre></div>
+
+
+<p>II. Make your activity extend <code>android.support.v7.app.AppCompatActivity</code>.</p>
+<div class="codehilite"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">AppCompatActivity</span> <span class="o">{</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</pre></div>
+
+
+<p>III. Declare your <code>EditText</code> inside any <code>layout.xml</code> file and wrap it with <code>TextInputLayout</code>. Add <code>app:counterEnabled</code> attribute and set its value to <code>true</code>. To restrict maximum characters count set some integer value to <code>app:counterMaxLength</code> attribute.</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;android.support.design.widget.TextInputLayout</span>
+        <span class="na">android:id=</span><span class="s">&quot;@+id/inputLayout&quot;</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">app:counterEnabled=</span><span class="s">&quot;true&quot;</span>
+        <span class="na">app:counterMaxLength=</span><span class="s">&quot;140&quot;</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;EditText</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:hint=</span><span class="s">&quot;hint text&quot;</span> <span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/android.support.design.widget.TextInputLayout&gt;</span>
+</pre></div>
+
+
+<h3 id="how-to-style_3">How to style?<a class="headerlink" href="#how-to-style_3" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../images/custom_counter.gif" />
+To define a custom style for the overflow.</p>
+<p>I. Define the text style.</p>
+<div class="codehilite"><pre><span></span><span class="c">&lt;!--Overflow label text style--&gt;</span>
+<span class="nt">&lt;style</span> <span class="na">name=</span><span class="s">&quot;MyOverflowText&quot;</span> <span class="na">parent=</span><span class="s">&quot;TextAppearance.AppCompat.Small&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">&quot;android:textColor&quot;</span><span class="nt">&gt;</span>@color/deep_orange<span class="nt">&lt;/item&gt;</span>
+<span class="nt">&lt;/style&gt;</span>
+</pre></div>
+
+
+<p>II. Apply this styles to your <code>TextInputLayout</code> via <code>app:counterOverflowTextAppearance</code> attribute.</p>
+<div class="codehilite"><pre><span></span>app:counterOverflowTextAppearance=&quot;@style/MyOverflowText&quot;
+</pre></div>
+
+
+<h2 id="password-toggle">Password toggle<a class="headerlink" href="#password-toggle" title="Permanent link">&para;</a></h2>
+<p><img alt="" src="../../images/password_toggle.gif" /></p>
+<div class="admonition note">
+<p class="admonition-title">From google material design <a href="https://material.io/guidelines/components/text-fields.html">documentation</a>.</p>
+<p>When the visibility icon is displayed with a text field, it indicates whether or not that field’s input is visible. A text field’s visibility may be toggled on or off using the icon.</p>
+</div>
+<h3 id="how-to-add_4">How to add?<a class="headerlink" href="#how-to-add_4" title="Permanent link">&para;</a></h3>
+<p>I. In your <code>build.gradle</code> add latest <code>appcompat</code> and <code>design</code> libraries.</p>
+<div class="codehilite"><pre><span></span>dependencies {
+    compile &#39;com.android.support:appcompat-v7:X.X.X&#39; // where X.X.X version
+    compile &#39;com.android.support:design:X.X.X&#39; // where X.X.X version
+}
+</pre></div>
+
+
+<p>II. Make your activity extend <code>android.support.v7.app.AppCompatActivity</code>.</p>
+<div class="codehilite"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainActivity</span> <span class="kd">extends</span> <span class="n">AppCompatActivity</span> <span class="o">{</span>
+    <span class="o">...</span>
+<span class="o">}</span>
+</pre></div>
+
+
+<p>III. Declare your <code>EditText</code> inside any <code>layout.xml</code> file and wrap it with <code>TextInputLayout</code>. Add <code>app:passwordToggleEnabled</code> and set its value to <code>true</code>.</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;android.support.design.widget.TextInputLayout</span>
+        <span class="na">android:id=</span><span class="s">&quot;@+id/inputLayout&quot;</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">app:passwordToggleEnabled=</span><span class="s">&quot;true&quot;</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;EditText</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:inputType=</span><span class="s">&quot;textPassword&quot;</span>
+        <span class="na">android:hint=</span><span class="s">&quot;Password&quot;</span> <span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/android.support.design.widget.TextInputLayout&gt;</span>
+</pre></div>
+
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Declare <code>app:passwordToggleContentDescription</code> attribute inside <code>TextInputLayout</code> for accessibility purposes.</p>
+</div>
+<h3 id="how-to-style_4">How to style?<a class="headerlink" href="#how-to-style_4" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../images/password_toggle_color.png" /></p>
+<p>To change the color of the password toggle icon, use the <code>app:passwordToggleTint</code> attribute:</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;android.support.design.widget.TextInputLayout</span>
+        <span class="na">android:id=</span><span class="s">&quot;@+id/inputLayout&quot;</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">app:passwordToggleEnabled=</span><span class="s">&quot;true&quot;</span>
+        <span class="na">app:passwordToggleTint=</span><span class="s">&quot;@color/colorAccent&quot;</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;EditText</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:hint=</span><span class="s">&quot;Password&quot;</span> <span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/android.support.design.widget.TextInputLayout&gt;</span>
+</pre></div>
+
+
+<p>Moreover, you can specify the blending mode with the <code>app:passwordToggleTintMode</code> attribute.</p>
+<h3 id="icon">Icon<a class="headerlink" href="#icon" title="Permanent link">&para;</a></h3>
+<p><img alt="" src="../../images/password_toggle_icon.png" /></p>
+<p>To change the password toggle icon, use the <code>app:passwordToggleDrawable</code> attribute:</p>
+<div class="codehilite"><pre><span></span><span class="nt">&lt;android.support.design.widget.TextInputLayout</span>
+        <span class="na">android:id=</span><span class="s">&quot;@+id/inputLayout&quot;</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">app:passwordToggleEnabled=</span><span class="s">&quot;true&quot;</span>
+        <span class="na">app:passwordToggleDrawable=</span><span class="s">&quot;@drawable/ic_lock&quot;</span><span class="nt">&gt;</span>
+
+    <span class="nt">&lt;EditText</span>
+        <span class="na">android:layout_width=</span><span class="s">&quot;match_parent&quot;</span>
+        <span class="na">android:layout_height=</span><span class="s">&quot;wrap_content&quot;</span>
+        <span class="na">android:hint=</span><span class="s">&quot;Password&quot;</span> <span class="nt">/&gt;</span>
+
+<span class="nt">&lt;/android.support.design.widget.TextInputLayout&gt;</span>
+</pre></div>
+
+
+<p>Use a <a href="https://developer.android.com/reference/android/graphics/drawable/StateListDrawable.html">StateListDrawable</a> with the <code>android:state_checked</code> attribute to use separate drawables for each toggle state. Moreover, choose an <a href="https://developer.android.com/reference/android/graphics/drawable/AnimatedStateListDrawable.html">AnimatedStateListDrawable</a> to animate the drawables between states.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../tabs/" title="Tabs" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Tabs
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../toolbars/" title="Toolbars" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Toolbars
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 - 2018 Dmytro Danylyk
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/materialdoc" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/dmytrodanylyk" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/dmytrodanylyk" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.627ea402.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-69898504-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>
