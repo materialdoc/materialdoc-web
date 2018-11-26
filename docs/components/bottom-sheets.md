@@ -176,6 +176,6 @@ III. Configure the `layout_anchorGravity` attribute with the desired gravity.
     android:layout_margin="@dimen/fab_margin"
     android:src="@android:drawable/ic_dialog_email"
     app:layout_anchor="@id/app_bar"
-    app:layout_anchorGravity="bottom|end"
+    app:layout_anchorGravity="top|end"
     />
 ```
