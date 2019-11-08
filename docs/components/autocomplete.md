@@ -38,7 +38,7 @@ III. Define a `filterable list adapter` to manage the auto completion data list.
 
 ```java
 int layoutItemId = android.R.layout.simple_dropdown_item_1line;
-String[] dogArr = getResources().getStringArray(R.array.dogs_list);
+String[] dogsArr = getResources().getStringArray(R.array.dogs_list);
 List<String> dogList = Arrays.asList(dogsArr);
 ArrayAdapter<String> adapter = new ArrayAdapter<>(this, layoutItemId, dogList);
 
